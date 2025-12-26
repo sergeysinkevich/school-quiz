@@ -40,7 +40,7 @@
             { id: 'spojnik', name: 'Spójnik', ruleTitle: 'Spójnik - łączenie wyrazów i zdań', ruleText: 'Spójniki łączą wyrazy i zdania, np. i, oraz, ale, lecz, więc.', ruleUrl: 'https://epodreczniki.pl/a/spojnik/D17mkf9Wb' }
           ],
           questions: [
-            { topicId: 'rzeczownik', q: 'Rzeczownik to część mowy, która nazywa:', options: ['cechy', 'czynności', 'osoby, zwierzęta i zjawiska', 'liczby'], answer: 2, expl: 'Rzeczownik nazywa osoby, zwierzęta, rośliny, przedmioty, miejsca i pojęcia.', ruleHtml: '<p><strong>Szybka ściąga</strong></p><ul><li>Odpowiada na pytania: <b>kto? co?</b></li><li>Przykłady: <em>pies</em>, <em>las</em>, <em>radość</em>.</li></ul>', ruleVideo: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
+            { topicId: 'rzeczownik', q: 'Rzeczownik to część mowy, która nazywa:', options: ['cechy', 'czynności', 'osoby, zwierzęta i zjawiska', 'liczby'], answer: 2, expl: 'Rzeczownik nazywa osoby, zwierzęta, rośliny, przedmioty, miejsca i pojęcia.', ruleHtml: '<p><strong>Szybka ściąga</strong></p><ul><li>Odpowiada na pytania: <b>kto? co?</b></li><li>Przykłady: <em>pies</em>, <em>las</em>, <em>radość</em>.</li></ul>', ruleVideo: 'https://youtube.com/shorts/IDtF0ShYfjg?feature=share' },
             { topicId: 'rzeczownik', q: 'Które z poniższych jest rzeczownikiem pospolitym?', options: ['Wisła', 'Europa', 'dziewczynka', 'Marta'], answer: 2, expl: 'Rzeczownik pospolity to nazwa ogólna, np. "dziewczynka".' },
             { topicId: 'rzeczownik', q: 'Które słowo jest rzeczownikiem własnym?', options: ['książka', 'pies', 'Adam', 'lekarz'], answer: 2, expl: 'Rzeczowniki własne zapisujemy wielką literą, np. "Adam".' },
             { topicId: 'rzeczownik', q: 'W którym wyrażeniu rzeczownik występuje w liczbie mnogiej?', options: ['dom', 'dziecko', 'książki', 'drzewo'], answer: 2, expl: '"Książki" to liczba mnoga rzeczownika "książka".' },
@@ -208,12 +208,15 @@
   const nextBtn = document.getElementById('nextBtn');
   const prevBtn = document.getElementById('prevBtn');
   const restartBtn = document.getElementById('restartBtn');
-  const ruleBtn = document.getElementById('ruleBtn');
+  const ruleTextTriggerEl = document.getElementById('ruleTextTrigger');
+  const ruleVideoTriggerEl = document.getElementById('ruleVideoTrigger');
   const logoTitleEl = document.getElementById('logoTitle');
 
   const ruleModal = document.getElementById('ruleModal');
   const ruleTitleEl = document.getElementById('ruleTitle');
   const ruleTextEl = document.getElementById('ruleText');
+  const ruleTextLinkEl = document.getElementById('ruleTextLink');
+  const ruleVideoLinkEl = document.getElementById('ruleVideoLink');
   const ruleLinkEl = document.getElementById('ruleLink');
   const ruleMediaEl = document.getElementById('ruleMedia');
 
@@ -521,10 +524,22 @@
     accuracyBadgeEl.textContent = `Skuteczność: ${acc}%`;
     globalStatsEl.textContent = `Poprawnych odpowiedzi: ${state.correctCount} z ${answeredTotal} (na razie sprawdzonych pytań).`;
 
-    const hasRule = !!(q.ruleText || q.ruleHtml || q.ruleVideo || q.ruleUrl || (topic && (topic.ruleText || topic.ruleHtml || topic.ruleVideo || topic.ruleUrl)));
-    ruleBtn.style.display = hasRule ? '' : 'none';
-    ruleBtn.onclick = () => {
-      if (hasRule) openRuleModal(q, topic);
+    const hasText = !!(q.ruleText || q.ruleHtml || (topic && (topic.ruleText || topic.ruleHtml)));
+    const hasVideo = !!(q.ruleVideo || (topic && topic.ruleVideo));
+    const hasAnyRule = hasText || hasVideo || !!(q.ruleUrl || (topic && topic.ruleUrl));
+
+    ruleTextTriggerEl.style.display = hasText ? '' : 'none';
+    ruleVideoTriggerEl.style.display = hasVideo ? '' : 'none';
+    const inlineContainer = ruleTextTriggerEl.parentElement;
+    if (inlineContainer) inlineContainer.style.display = hasAnyRule ? 'inline-flex' : 'none';
+
+    ruleTextTriggerEl.onclick = (e) => {
+      e.preventDefault();
+      if (hasText) openRuleModal(q, topic, { show: 'text' });
+    };
+    ruleVideoTriggerEl.onclick = (e) => {
+      e.preventDefault();
+      if (hasVideo) openRuleModal(q, topic, { show: 'video' });
     };
 
     if (saved) {
@@ -630,8 +645,25 @@
     const lower = url.toLowerCase();
     if (lower.includes('youtube.com') || lower.includes('youtu.be')) {
       let videoId = '';
-      const ytIdMatch = url.match(/(?:v=|youtu\.be\/)([^&#]+)/);
-      if (ytIdMatch && ytIdMatch[1]) videoId = ytIdMatch[1];
+      try {
+        const ytUrl = new URL(url);
+        const qpId = ytUrl.searchParams.get('v');
+        const shortsMatch = ytUrl.pathname.match(/\/shorts\/([^/]+)/);
+        const pathMatch = ytUrl.pathname.match(/\/(?:embed|v)\/([^/]+)/);
+        if (qpId) {
+          videoId = qpId;
+        } else if (shortsMatch && shortsMatch[1]) {
+          videoId = shortsMatch[1];
+        } else if (pathMatch && pathMatch[1]) {
+          videoId = pathMatch[1];
+        }
+      } catch (e) {
+        // ignore URL parsing errors, fallback below
+      }
+      if (!videoId) {
+        const ytIdMatch = url.match(/(?:v=|youtu\.be\/|\/shorts\/|\/embed\/|\/v\/)([^&#?/]+)/);
+        if (ytIdMatch && ytIdMatch[1]) videoId = ytIdMatch[1];
+      }
       const src = videoId ? `https://www.youtube.com/embed/${videoId}` : url;
       return `<iframe src="${src}" allowfullscreen></iframe>`;
     }
@@ -644,26 +676,54 @@
     return `<video src="${url}" controls></video>`;
   }
 
-  function openRuleModal(question, topic) {
+  function openRuleModal(question, topic, opts = {}) {
     const source = question && (question.ruleText || question.ruleHtml || question.ruleVideo || question.ruleUrl)
       ? question
       : topic || {};
 
     ruleTitleEl.textContent = source.ruleTitle || (topic ? topic.ruleTitle : 'Zasada') || 'Zasada';
-    ruleTextEl.innerHTML = source.ruleHtml || source.ruleText || '';
+
+    const hasText = !!(source.ruleHtml || source.ruleText);
+    const hasVideo = !!source.ruleVideo;
+    const hasLink = !!source.ruleUrl;
+    const prefer = opts.show || (hasText ? 'text' : hasVideo ? 'video' : 'none');
+
+    ruleTextEl.innerHTML = hasText ? (source.ruleHtml || source.ruleText) : '';
+    ruleTextEl.style.display = hasText && prefer === 'text' ? 'block' : 'none';
+
+    ruleTextLinkEl.style.display = hasText ? '' : 'none';
+    ruleTextLinkEl.onclick = (e) => {
+      e.preventDefault();
+      if (hasText) {
+        ruleTextEl.style.display = 'block';
+        ruleMediaEl.style.display = 'none';
+      }
+    };
+
     ruleLinkEl.href = source.ruleUrl || '#';
-    if (source.ruleUrl) {
-      ruleLinkEl.style.display = '';
-    } else {
-      ruleLinkEl.style.display = 'none';
-    }
+    ruleLinkEl.style.display = hasLink ? '' : 'none';
 
     ruleMediaEl.innerHTML = '';
-    if (source.ruleVideo) {
+    ruleMediaEl.style.display = 'none';
+    ruleVideoLinkEl.style.display = hasVideo ? '' : 'none';
+    if (hasVideo) {
       const wrapper = document.createElement('div');
-      wrapper.className = 'rule-media';
+      wrapper.className = 'rule-media portrait';
       wrapper.innerHTML = buildVideoEmbed(source.ruleVideo);
       ruleMediaEl.appendChild(wrapper);
+      ruleVideoLinkEl.onclick = (e) => {
+        e.preventDefault();
+        ruleMediaEl.style.display = 'flex';
+        ruleTextEl.style.display = hasText ? 'none' : 'none';
+      };
+      if (prefer === 'video' || (!hasText && hasVideo)) {
+        ruleMediaEl.style.display = 'flex';
+      }
+    }
+
+    if (prefer === 'text' && hasText) {
+      ruleTextEl.style.display = 'block';
+      ruleMediaEl.style.display = 'none';
     }
 
     ruleModal.classList.add('show');

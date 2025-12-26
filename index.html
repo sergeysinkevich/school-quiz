@@ -2,7 +2,8 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <title>CM O/N 5B – BLACKPINK QUIZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CM O/N 5B - BLACKPINK QUIZ</title>
 
   <!-- PWA -->
   <link rel="manifest" href="manifest.json" />
@@ -46,7 +47,10 @@
     <section class="card" id="questionCard">
       <div class="question-meta">
         <span id="topicLabel">Temat: —</span>
-        <span class="rule-link" id="ruleBtn">📖 Zobacz zasadę</span>
+        <span class="rule-actions-inline">
+          <a id="ruleTextTrigger" class="pill-link" href="#">📖 Tekst</a>
+          <a id="ruleVideoTrigger" class="pill-link" href="#">🎥 Wideo</a>
+        </span>
       </div>
       <div class="question-text" id="questionText">Wczytywanie…</div>
       <div class="options" id="optionsContainer"></div>
@@ -76,9 +80,13 @@
 <div class="modal-backdrop" id="ruleModal">
   <div class="modal">
     <h3 id="ruleTitle">Zasada</h3>
-    <p id="ruleText"></p>
-    <div id="ruleMedia"></div>
-    <p><a id="ruleLink" class="link-rule" href="#" target="_blank" rel="noopener">Otwórz materiał w nowej karcie</a></p>
+    <div class="rule-actions">
+      <a id="ruleTextLink" class="pill-link" href="#">📖 Tekst</a>
+      <a id="ruleVideoLink" class="pill-link" href="#" target="_blank" rel="noopener">🎥 Wideo</a>
+      <a id="ruleLink" class="pill-link" href="#" target="_blank" rel="noopener">🌐 Materiał</a>
+    </div>
+    <div id="ruleText" class="rule-text"></div>
+    <div id="ruleMedia" class="rule-media"></div>
     <button class="btn btn-primary" onclick="closeRuleModal()">Zamknij</button>
   </div>
 </div>

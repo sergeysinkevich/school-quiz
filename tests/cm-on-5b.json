@@ -64,14 +64,15 @@
           "answer": 2,
           "expl": "Rzeczownik nazywa osoby, zwierzęta, rośliny, przedmioty, miejsca i pojęcia.",
           "ruleHtml": "<p><strong>Szybka ściąga</strong></p><ul><li>Odpowiada na pytania: <b>kto? co?</b></li><li>Przykłady: <em>pies</em>, <em>las</em>, <em>radość</em>.</li></ul>",
-          "ruleVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          "ruleVideo": "https://youtube.com/shorts/CNDJNZq8C8o?feature=share"
         },
         {
           "topicId": "rzeczownik",
           "q": "Które z poniższych jest rzeczownikiem pospolitym?",
           "options": ["Wisła", "Europa", "dziewczynka", "Marta"],
           "answer": 2,
-          "expl": "Rzeczownik pospolity to nazwa ogólna, np. \"dziewczynka\"."
+          "expl": "Rzeczownik pospolity to nazwa ogólna, np. \"dziewczynka\".",
+          "ruleVideo": "https://youtube.com/shorts/IDtF0ShYfjg?feature=share"
         },
         {
           "topicId": "rzeczownik",
