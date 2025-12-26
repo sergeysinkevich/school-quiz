@@ -68,7 +68,7 @@
   const themes = {
     blackpink: {
       label: 'BlackPink',
-      title: 'CM O/N 5B - BLACKPINK QUIZ',
+      title: 'School Quiz',
       hero: 'url("themes/blackpink-1600x900.png")',
       vars: {
         '--primary': '#ff4da6',
@@ -95,7 +95,7 @@
     },
     strangerThings: {
       label: 'Stranger Things',
-      title: 'CM O/N 5B - Stranger Things',
+      title: 'School Quiz',
       hero: 'url("themes/stranger-1600x900.png")',
       vars: {
         '--primary': '#e50914',
@@ -122,7 +122,7 @@
     },
     hobbit: {
       label: 'Hobbit',
-      title: 'CM O/N 5B - Hobbit',
+      title: 'School Quiz',
       hero: 'url("themes/hobbit-1600x900.png")',
       vars: {
         '--primary': '#d6a758',
@@ -149,7 +149,7 @@
     },
     roblox: {
       label: 'Roblox',
-      title: 'CM O/N 5B - Roblox',
+      title: 'School Quiz',
       hero: 'url("themes/roblox-1600x900.png")',
       vars: {
         '--primary': '#ff4d4f',
@@ -198,10 +198,10 @@
   const questionTextEl = document.getElementById('questionText');
   const optionsEl = document.getElementById('optionsContainer');
   const feedbackEl = document.getElementById('feedbackContainer');
+  const filterPanelEl = document.getElementById('filterPanel');
   const topicLabelEl = document.getElementById('topicLabel');
   const topicsSummaryEl = document.getElementById('topicsSummary');
-  const questionCounterEl = document.getElementById('questionCounter');
-  const accuracyBadgeEl = document.getElementById('accuracyBadge');
+  const quizStatsEl = document.getElementById('quizStats');
   const globalStatsEl = document.getElementById('globalStats');
   const historyContainerEl = document.getElementById('historyContainer');
   const questionCardEl = document.getElementById('questionCard');
@@ -220,6 +220,15 @@
   const ruleLinkEl = document.getElementById('ruleLink');
   const ruleMediaEl = document.getElementById('ruleMedia');
 
+  function syncFilterPanelOpen() {
+    if (!filterPanelEl) return;
+    if (window.innerWidth > 900) {
+      filterPanelEl.setAttribute('open', '');
+    } else {
+      filterPanelEl.removeAttribute('open');
+    }
+  }
+
   // Theme handling
   function applyTheme(themeId, persist = false) {
     const theme = themes[themeId] || themes.blackpink;
@@ -232,8 +241,7 @@
     const heroValue = theme.hero || 'none';
     document.documentElement.style.setProperty('--hero-image', heroValue);
 
-    logoTitleEl.textContent = theme.title;
-    document.title = theme.title;
+    document.title = 'School Quiz';
 
     if (persist) {
       try {
@@ -425,6 +433,24 @@
     };
   }
 
+  function updateQuizStats(currentIndex = state.currentIndex) {
+    if (!quizStatsEl) return;
+    const test = getCurrentTest();
+    const total = test && test.questions ? test.questions.length : 0;
+    if (!total) {
+      quizStatsEl.textContent = 'Pytanie — / — | Skutecznosc: —';
+      return;
+    }
+    const answeredTotal = state.answers.filter(Boolean).length;
+    const acc = answeredTotal > 0 ? Math.round((state.correctCount / answeredTotal) * 100) : 0;
+    quizStatsEl.textContent = `Pytanie ${currentIndex + 1} / ${total} | Skutecznosc: ${acc}%`;
+  }
+
+  function updateHeaderTestName() {
+    const test = getCurrentTest();
+    logoTitleEl.textContent = test ? test.name : 'Wybierz test';
+  }
+
   // Quiz logic
   function getCurrentTest() {
     return allTests.find(t => t.id === state.currentTestId);
@@ -455,9 +481,8 @@
     questionTextEl.textContent = 'Brak dostępnych testów.';
     optionsEl.innerHTML = '';
     feedbackEl.innerHTML = '';
-    topicLabelEl.textContent = 'Temat: —';
-    questionCounterEl.textContent = '—';
-    accuracyBadgeEl.textContent = 'Skuteczność: —';
+    topicLabelEl.textContent = 'Temat: -';
+    if (quizStatsEl) quizStatsEl.textContent = 'Pytanie — / — • Skuteczność: —';
     globalStatsEl.textContent = '';
     nextBtn.disabled = true;
     restartBtn.disabled = true;
@@ -465,6 +490,7 @@
 
   function resetTest() {
     const test = getCurrentTest();
+    updateHeaderTestName();
     if (!test) {
       showNoTestsMessage();
       updateSidebar();
@@ -498,7 +524,7 @@
     questionCardEl.classList.add('glitter');
 
     questionTextEl.textContent = q.q;
-    topicLabelEl.textContent = topic ? `Temat: ${topic.name}` : 'Temat: —';
+    topicLabelEl.textContent = topic ? `Temat: ${topic.name}` : 'Temat: -';
     feedbackEl.innerHTML = '';
     state.answered = !!saved;
 
@@ -506,7 +532,7 @@
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
     q.options.forEach((opt, i) => {
       const btn = document.createElement('button');
-      btn.className = 'option-btn';
+      btn.className = 'option-btn option-enter';
       btn.innerHTML = `<span class="key">${letters[i] || ''}</span> ${opt}`;
       btn.addEventListener('click', () => handleAnswer(i));
       if (saved) {
@@ -517,11 +543,8 @@
       optionsEl.appendChild(btn);
     });
 
-    questionCounterEl.textContent = `Pytanie ${state.currentIndex + 1} / ${total}`;
-
     const answeredTotal = state.answers.filter(Boolean).length;
-    const acc = answeredTotal > 0 ? Math.round((state.correctCount / answeredTotal) * 100) : 0;
-    accuracyBadgeEl.textContent = `Skuteczność: ${acc}%`;
+    updateQuizStats(state.currentIndex);
     globalStatsEl.textContent = `Poprawnych odpowiedzi: ${state.correctCount} z ${answeredTotal} (na razie sprawdzonych pytań).`;
 
     const hasText = !!(q.ruleText || q.ruleHtml || (topic && (topic.ruleText || topic.ruleHtml)));
@@ -603,7 +626,7 @@
     const total = test.questions.length;
     const answeredTotal = state.currentIndex + 1;
     const acc = Math.round((state.correctCount / answeredTotal) * 100);
-    accuracyBadgeEl.textContent = `Skuteczność: ${acc}%`;
+    updateQuizStats(state.currentIndex);
     globalStatsEl.textContent = `Poprawnych odpowiedzi: ${state.correctCount} z ${answeredTotal}.`;
 
     updateSidebar();
@@ -665,7 +688,7 @@
         if (ytIdMatch && ytIdMatch[1]) videoId = ytIdMatch[1];
       }
       const src = videoId ? `https://www.youtube.com/embed/${videoId}` : url;
-      return `<iframe src="${src}" allowfullscreen></iframe>`;
+      return `<iframe src="${src}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
     }
     if (lower.includes('vimeo.com')) {
       const vmIdMatch = url.match(/vimeo\.com\/(\d+)/);
@@ -697,6 +720,9 @@
       if (hasText) {
         ruleTextEl.style.display = 'block';
         ruleMediaEl.style.display = 'none';
+        if (hasVideo) {
+          ruleMediaEl.innerHTML = '';
+        }
       }
     };
 
@@ -707,17 +733,25 @@
     ruleMediaEl.style.display = 'none';
     ruleVideoLinkEl.style.display = hasVideo ? '' : 'none';
     if (hasVideo) {
-      const wrapper = document.createElement('div');
-      wrapper.className = 'rule-media portrait';
-      wrapper.innerHTML = buildVideoEmbed(source.ruleVideo);
-      ruleMediaEl.appendChild(wrapper);
-      ruleVideoLinkEl.onclick = (e) => {
-        e.preventDefault();
+      const videoHtml = buildVideoEmbed(source.ruleVideo);
+      const showVideo = () => {
+        ruleMediaEl.innerHTML = '';
+        const wrapper = document.createElement('div');
+        wrapper.className = 'rule-media portrait';
+        wrapper.innerHTML = videoHtml;
+        ruleMediaEl.appendChild(wrapper);
         ruleMediaEl.style.display = 'flex';
         ruleTextEl.style.display = hasText ? 'none' : 'none';
       };
+      if (prefer === 'video') {
+        showVideo();
+      }
+      ruleVideoLinkEl.onclick = (e) => {
+        e.preventDefault();
+        showVideo();
+      };
       if (prefer === 'video' || (!hasText && hasVideo)) {
-        ruleMediaEl.style.display = 'flex';
+        showVideo();
       }
     }
 
@@ -731,6 +765,11 @@
 
   function closeRuleModal() {
     ruleModal.classList.remove('show');
+    // Stop any playing media by clearing iframe/video nodes
+    if (ruleMediaEl) {
+      ruleMediaEl.innerHTML = '';
+      ruleMediaEl.style.display = 'none';
+    }
   }
 
   function updateSidebar() {
@@ -876,6 +915,9 @@
     safePlay(sfx.click);
     resetTest();
   });
+
+  window.addEventListener('resize', syncFilterPanelOpen);
+  syncFilterPanelOpen();
 
   initThemeSelect();
   loadAllTests()

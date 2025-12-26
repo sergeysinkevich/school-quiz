@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CM O/N 5B - BLACKPINK QUIZ</title>
+  <title>School Quiz</title>
 
   <!-- PWA -->
   <link rel="manifest" href="manifest.json" />
@@ -21,44 +21,46 @@
 <div class="app">
   <header>
     <div class="hero" id="themeHero"></div>
-    <div class="logo-title" id="logoTitle">CM O/N 5B - BLACKPINK QUIZ</div>
-    <div class="subtitle">Części mowy odmienne i nieodmienne · klasa 5B</div>
-    <div class="top-bar">
-      <div class="badge">
-        Motyw:
+    <div class="logo-title" id="logoTitle">Wybierz test</div>
+    <div class="hero-controls">
+      <label class="theme-chip" for="themeSelect">
         <select id="themeSelect"></select>
-      </div>
-      <div class="badge">
-        Przedmiot:
-        <select id="subjectSelect"></select>
-      </div>
-      <div class="badge">
-        Test:
-        <select id="testSelect"></select>
-      </div>
+      </label>
     </div>
-        <div class="top-bar">
-      <div class="badge" id="questionCounter">Pytanie 1 / 1</div>
-      <div class="badge" id="accuracyBadge">Skuteczność: 0%</div>
+    <details class="filter-panel" id="filterPanel">
+      <summary id="filterSummary">Wybierz przedmiot i test</summary>
+      <div class="top-bar filter-grid">
+        <div class="badge">
+          Przedmiot:
+          <select id="subjectSelect"></select>
+        </div>
+        <div class="badge">
+          Test:
+          <select id="testSelect"></select>
+        </div>
+      </div>
+    </details>
+    <div class="top-bar stats-row">
+      <div class="badge" id="quizStats">Pytanie 1/1 | Skutecznosc: 0%</div>
+      <button class="btn btn-ghost" id="restartBtn" aria-label="Restart testu">&#10227; Restart</button>
     </div>
   </header>
 
   <main>
     <section class="card" id="questionCard">
       <div class="question-meta">
-        <span id="topicLabel">Temat: —</span>
+        <span id="topicLabel">Temat: -</span>
         <span class="rule-actions-inline">
-          <a id="ruleTextTrigger" class="pill-link" href="#">📖 Tekst</a>
-          <a id="ruleVideoTrigger" class="pill-link" href="#">🎥 Wideo</a>
+          <a id="ruleTextTrigger" class="pill-link" href="#">📄 Tekst</a>
+          <a id="ruleVideoTrigger" class="pill-link" href="#">🎬 Wideo</a>
         </span>
       </div>
-      <div class="question-text" id="questionText">Wczytywanie…</div>
+      <div class="question-text" id="questionText">Wczytywanie...</div>
       <div class="options" id="optionsContainer"></div>
       <div id="feedbackContainer"></div>
       <div class="controls">
-        <button class="btn" id="prevBtn">← Poprzednie pytanie</button>
-        <button class="btn" id="restartBtn">🔁 Zacznij test od nowa</button>
-        <button class="btn btn-primary" id="nextBtn" disabled>Następne pytanie →</button>
+        <button class="btn btn-icon" id="prevBtn" aria-label="Poprzednie pytanie">&#9664;</button>
+        <button class="btn btn-primary btn-icon" id="nextBtn" aria-label="Następne pytanie" disabled>&#9654;</button>
       </div>
       <div class="stats" id="globalStats"></div>
     </section>
@@ -76,14 +78,14 @@
   </main>
 </div>
 
-<!-- Okno modalne z zasadą -->
+<!-- Okno modalne z zasada -->
 <div class="modal-backdrop" id="ruleModal">
   <div class="modal">
     <h3 id="ruleTitle">Zasada</h3>
     <div class="rule-actions">
-      <a id="ruleTextLink" class="pill-link" href="#">📖 Tekst</a>
-      <a id="ruleVideoLink" class="pill-link" href="#" target="_blank" rel="noopener">🎥 Wideo</a>
-      <a id="ruleLink" class="pill-link" href="#" target="_blank" rel="noopener">🌐 Materiał</a>
+      <a id="ruleTextLink" class="pill-link" href="#">📄 Tekst</a>
+      <a id="ruleVideoLink" class="pill-link" href="#" target="_blank" rel="noopener">🎬 Wideo</a>
+      <a id="ruleLink" class="pill-link" href="#" target="_blank" rel="noopener">🔗 Material</a>
     </div>
     <div id="ruleText" class="rule-text"></div>
     <div id="ruleMedia" class="rule-media"></div>
@@ -95,3 +97,5 @@
 
 </body>
 </html>
+
+
