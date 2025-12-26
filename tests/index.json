@@ -1,0 +1,6 @@
+[
+  "tests/cm-on-5b.json",
+  "tests/math-basics.json",
+  "tests/english-basics.json",
+  "tests/science-basics.json"
+]

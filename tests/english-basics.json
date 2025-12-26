@@ -1,0 +1,34 @@
+{
+  "subjectId": "english",
+  "subjectName": "Język angielski",
+  "tests": [
+    {
+      "id": "eng-vocab",
+      "name": "Vocabulary - everyday",
+      "topics": [
+        { "id": "food", "name": "Food", "ruleTitle": "Food basics", "ruleText": "Common food words: bread, butter, milk, cheese, apple, banana.", "ruleUrl": "https://dictionary.cambridge.org/" },
+        { "id": "places", "name": "Places", "ruleTitle": "Places in town", "ruleText": "Place words: school, library, hospital, bank, bakery.", "ruleUrl": "https://dictionary.cambridge.org/" }
+      ],
+      "questions": [
+        { "topicId": "food", "q": "Jak po angielsku będzie 'chleb'?", "options": ["bread", "cheese", "meat", "butter"], "answer": 0, "expl": "\"Bread\" to chleb." },
+        { "topicId": "food", "q": "Jak po angielsku będzie 'banan'?", "options": ["pineapple", "banana", "apple", "berry"], "answer": 1, "expl": "\"Banana\" to banan." },
+        { "topicId": "places", "q": "Jak po angielsku będzie 'biblioteka'?", "options": ["bank", "library", "hospital", "bakery"], "answer": 1, "expl": "\"Library\" to biblioteka." },
+        { "topicId": "places", "q": "Jak po angielsku będzie 'piekarnia'?", "options": ["bakery", "bank", "school", "station"], "answer": 0, "expl": "\"Bakery\" to piekarnia." }
+      ]
+    },
+    {
+      "id": "eng-grammar",
+      "name": "Grammar - to be / have got",
+      "topics": [
+        { "id": "to-be", "name": "To be", "ruleTitle": "Czasownik 'to be'", "ruleText": "Odmiana: I am, you are, he/she/it is, we are, you are, they are.", "ruleUrl": "https://learnenglish.britishcouncil.org/" },
+        { "id": "have-got", "name": "Have got", "ruleTitle": "Konstrukcja 'have got'", "ruleText": "I/you/we/they have got; he/she/it has got. Użycie do posiadania.", "ruleUrl": "https://learnenglish.britishcouncil.org/" }
+      ],
+      "questions": [
+        { "topicId": "to-be", "q": "Wybierz poprawną formę: She ___ happy.", "options": ["are", "is", "am", "be"], "answer": 1, "expl": "She is happy." },
+        { "topicId": "to-be", "q": "Wybierz poprawną formę: They ___ at school.", "options": ["is", "are", "am", "be"], "answer": 1, "expl": "They are at school." },
+        { "topicId": "have-got", "q": "Uzupełnij: He ___ a bike.", "options": ["have got", "has got", "have", "got"], "answer": 1, "expl": "He has got a bike." },
+        { "topicId": "have-got", "q": "Uzupełnij: We ___ two cats.", "options": ["has got", "have got", "got", "have"], "answer": 1, "expl": "We have got two cats." }
+      ]
+    }
+  ]
+}
