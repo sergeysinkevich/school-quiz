@@ -745,15 +745,15 @@
         ruleMediaEl.style.display = 'flex';
         ruleTextEl.style.display = hasText ? 'none' : 'none';
       };
-      if (prefer === 'video') {
-        showVideo();
-      }
+      showVideo();
       ruleVideoLinkEl.onclick = (e) => {
         e.preventDefault();
         showVideo();
       };
       if (prefer === 'video' || (!hasText && hasVideo)) {
         showVideo();
+      } else {
+        ruleMediaEl.style.display = 'none';
       }
     }
 
