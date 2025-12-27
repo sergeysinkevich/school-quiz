@@ -64,7 +64,7 @@
           "answer": 2,
           "expl": "Rzeczownik nazywa osoby, zwierzęta, rośliny, przedmioty, miejsca i pojęcia.",
           "ruleHtml": "<p><strong>Szybka ściąga</strong></p><ul><li>Odpowiada na pytania: <b>kto? co?</b></li><li>Przykłady: <em>pies</em>, <em>las</em>, <em>radość</em>.</li></ul>",
-          "ruleVideo": "https://youtube.com/shorts/CNDJNZq8C8o?feature=share"
+          "ruleVideo": "https://youtube.com/shorts/jBlhIHpEYb0"
         },
         {
           "topicId": "rzeczownik",
@@ -72,21 +72,23 @@
           "options": ["Wisła", "Europa", "dziewczynka", "Marta"],
           "answer": 2,
           "expl": "Rzeczownik pospolity to nazwa ogólna, np. \"dziewczynka\".",
-          "ruleVideo": "https://youtube.com/shorts/IDtF0ShYfjg?feature=share"
+          "ruleVideo": "https://youtube.com/shorts/kgihwZWrkE4"
         },
         {
           "topicId": "rzeczownik",
           "q": "Które słowo jest rzeczownikiem własnym?",
           "options": ["książka", "pies", "Adam", "lekarz"],
           "answer": 2,
-          "expl": "Rzeczowniki własne zapisujemy wielką literą, np. \"Adam\"."
+          "expl": "Rzeczowniki własne zapisujemy wielką literą, np. \"Adam\".",
+          "ruleVideo": "https://youtube.com/shorts/CNDJNZq8C8o?feature=share"
         },
         {
           "topicId": "rzeczownik",
           "q": "W którym wyrażeniu rzeczownik występuje w liczbie mnogiej?",
           "options": ["dom", "dziecko", "książki", "drzewo"],
           "answer": 2,
-          "expl": "\"Książki\" to liczba mnoga rzeczownika \"książka\"."
+          "expl": "\"Książki\" to liczba mnoga rzeczownika \"książka\".",
+          "ruleVideo": "https://youtube.com/shorts/IDtF0ShYfjg?feature=share"
         },
         {
           "topicId": "przymiotnik",
