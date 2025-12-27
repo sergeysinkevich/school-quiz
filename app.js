@@ -687,8 +687,10 @@
         const ytIdMatch = url.match(/(?:v=|youtu\.be\/|\/shorts\/|\/embed\/|\/v\/)([^&#?/]+)/);
         if (ytIdMatch && ytIdMatch[1]) videoId = ytIdMatch[1];
       }
-      const src = videoId ? `https://www.youtube.com/embed/${videoId}` : url;
-      return `<iframe src="${src}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+      const src = videoId
+        ? `https://www.youtube.com/embed/${videoId}?playsinline=1`
+        : url;
+      return `<iframe src="${src}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen webkitallowfullscreen></iframe>`;
     }
     if (lower.includes('vimeo.com')) {
       const vmIdMatch = url.match(/vimeo\.com\/(\d+)/);
