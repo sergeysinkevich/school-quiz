@@ -689,7 +689,7 @@
         if (ytIdMatch && ytIdMatch[1]) videoId = ytIdMatch[1];
       }
       const src = videoId
-        ? `https://www.youtube-nocookie.com/embed/${videoId}?playsinline=1`
+        ? `https://www.youtube.com/embed/${videoId}?playsinline=1`
         : url;
       return `<iframe src="${src}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen webkitallowfullscreen spellcheck="false"></iframe>`;
     }
