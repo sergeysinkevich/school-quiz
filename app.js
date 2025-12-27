@@ -691,7 +691,7 @@
       const src = videoId
         ? `https://www.youtube.com/embed/${videoId}?playsinline=1`
         : url;
-      return `<iframe src="${src}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen webkitallowfullscreen spellcheck="false"></iframe>`;
+      return `<iframe src="${src}" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture" allowfullscreen webkitallowfullscreen spellcheck="false"></iframe>`;
     }
     if (lower.includes('vimeo.com')) {
       const vmIdMatch = url.match(/vimeo\.com\/(\d+)/);
