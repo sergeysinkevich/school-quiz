@@ -219,6 +219,7 @@
   const ruleVideoLinkEl = document.getElementById('ruleVideoLink');
   const ruleLinkEl = document.getElementById('ruleLink');
   const ruleMediaEl = document.getElementById('ruleMedia');
+  const ruleCloseBtn = document.getElementById('ruleCloseBtn');
 
   function syncFilterPanelOpen() {
     if (!filterPanelEl) return;
@@ -917,6 +918,9 @@
     safePlay(sfx.click);
     resetTest();
   });
+  if (ruleCloseBtn) {
+    ruleCloseBtn.addEventListener('click', () => closeRuleModal());
+  }
 
   window.addEventListener('resize', syncFilterPanelOpen);
   syncFilterPanelOpen();
@@ -936,5 +940,4 @@
     navigator.serviceWorker.register('service-worker.js').catch(() => {});
   }
 
-  window.closeRuleModal = closeRuleModal;
 })();
