@@ -190,7 +190,8 @@
     historyKey: HISTORY_KEY,
     currentThemeId: 'blackpink',
     answers: [],
-    sessionQuestions: []
+    sessionQuestions: [],
+    optionOrders: []
   };
 
   // DOM references
@@ -520,6 +521,16 @@
     return getSessionQuestions().length;
   }
 
+  function getOptionOrder(index, question) {
+    const test = getCurrentTest();
+    if (!test || !question) return [];
+    if (!Array.isArray(state.optionOrders)) state.optionOrders = [];
+    if (!state.optionOrders[index] || state.optionOrders[index].length !== question.options.length) {
+      state.optionOrders[index] = shuffleArray(question.options.map((_, i) => i));
+    }
+    return state.optionOrders[index];
+  }
+
   function getCurrentTest() {
     return allTests.find(t => t.id === state.currentTestId);
   }
@@ -574,6 +585,7 @@
     state.correctCount = 0;
     state.answered = false;
     state.answers = new Array(getSessionTotal());
+    state.optionOrders = new Array(getSessionTotal());
     if (!state.sessionQuestions.length) {
       showNoTestsMessage();
       updateSidebar();
@@ -610,15 +622,19 @@
 
     optionsEl.innerHTML = '';
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
-    q.options.forEach((opt, i) => {
+    const optionOrder = getOptionOrder(state.currentIndex, q);
+    optionOrder.forEach((originalIndex, i) => {
+      const opt = q.options[originalIndex];
       const btn = document.createElement('button');
       btn.className = 'option-btn option-enter';
       btn.innerHTML = `<span class="key">${letters[i] || ''}</span> ${opt}`;
       btn.addEventListener('click', () => handleAnswer(i));
       if (saved) {
         btn.classList.add('disabled');
-        if (i === q.answer) btn.classList.add('correct');
-        if (i === saved.selected && saved.selected !== q.answer) btn.classList.add('incorrect');
+        if (originalIndex === q.answer) btn.classList.add('correct');
+        if (originalIndex === saved.selectedOriginal && saved.selectedOriginal !== q.answer) {
+          btn.classList.add('incorrect');
+        }
       }
       optionsEl.appendChild(btn);
     });
@@ -664,6 +680,9 @@
     const q = getCurrentQuestion();
     if (!q) return;
     const topic = getTopicById(q.topicId);
+    const optionOrder = getOptionOrder(state.currentIndex, q);
+    const originalIndex = optionOrder[index];
+    if (typeof originalIndex !== 'number') return;
 
     state.answered = true;
     safePlay(sfx.click);
@@ -671,10 +690,13 @@
     const optionButtons = optionsEl.querySelectorAll('.option-btn');
     optionButtons.forEach(btn => btn.classList.add('disabled'));
 
-    optionButtons[q.answer]?.classList.add('correct');
+    const correctDisplayIndex = optionOrder.indexOf(q.answer);
+    if (correctDisplayIndex >= 0) {
+      optionButtons[correctDisplayIndex]?.classList.add('correct');
+    }
 
     let correct = false;
-    if (index === q.answer) {
+    if (originalIndex === q.answer) {
       correct = true;
       state.correctCount++;
       safePlay(sfx.correct);
@@ -696,7 +718,7 @@
 
     nextBtn.disabled = false;
     state.answers[state.currentIndex] = {
-      selected: index,
+      selectedOriginal: originalIndex,
       correct,
       answer: q.answer,
       topicId: q.topicId
