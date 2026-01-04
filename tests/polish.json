@@ -71,24 +71,21 @@
           "q": "Które z poniższych jest rzeczownikiem pospolitym?",
           "options": ["Wisła", "Europa", "dziewczynka", "Marta"],
           "answer": 2,
-          "expl": "Rzeczownik pospolity to nazwa ogólna, np. \"dziewczynka\".",
-          "ruleVideo": "https://youtube.com/shorts/kgihwZWrkE4"
+          "expl": "Rzeczownik pospolity to nazwa ogólna, np. \"dziewczynka\"."
         },
         {
           "topicId": "rzeczownik",
           "q": "Które słowo jest rzeczownikiem własnym?",
           "options": ["książka", "pies", "Adam", "lekarz"],
           "answer": 2,
-          "expl": "Rzeczowniki własne zapisujemy wielką literą, np. \"Adam\".",
-          "ruleVideo": "https://youtube.com/shorts/CNDJNZq8C8o?feature=share"
+          "expl": "Rzeczowniki własne zapisujemy wielką literą, np. \"Adam\"."
         },
         {
           "topicId": "rzeczownik",
           "q": "W którym wyrażeniu rzeczownik występuje w liczbie mnogiej?",
           "options": ["dom", "dziecko", "książki", "drzewo"],
           "answer": 2,
-          "expl": "\"Książki\" to liczba mnoga rzeczownika \"książka\".",
-          "ruleVideo": "https://youtube.com/shorts/IDtF0ShYfjg?feature=share"
+          "expl": "\"Książki\" to liczba mnoga rzeczownika \"książka\"."
         },
         {
           "topicId": "przymiotnik",
