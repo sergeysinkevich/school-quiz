@@ -244,6 +244,23 @@ select {
   font-size: 13px;
 }
 
+input[type="number"] {
+  background: var(--control-bg);
+  color: var(--text);
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  padding: 4px 10px;
+  font-size: 13px;
+  width: 110px;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 main {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(220px, 1.1fr);
@@ -664,6 +681,10 @@ main {
   }
 
   .top-bar select {
+    flex: 1;
+  }
+
+  .top-bar input[type="number"] {
     flex: 1;
   }
 

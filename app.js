@@ -183,18 +183,21 @@
     currentSubjectId: null,
     currentTestId: null,
     currentIndex: 0,
+    questionLimit: null,
     answered: false,
     correctCount: 0,
     perTopic: {},
     historyKey: HISTORY_KEY,
     currentThemeId: 'blackpink',
-    answers: []
+    answers: [],
+    sessionQuestions: []
   };
 
   // DOM references
   const themeSelectEl = document.getElementById('themeSelect');
   const subjectSelectEl = document.getElementById('subjectSelect');
   const testSelectEl = document.getElementById('testSelect');
+  const questionCountInputEl = document.getElementById('questionCountInput');
   const questionTextEl = document.getElementById('questionText');
   const optionsEl = document.getElementById('optionsContainer');
   const feedbackEl = document.getElementById('feedbackContainer');
@@ -228,6 +231,51 @@
     } else {
       filterPanelEl.removeAttribute('open');
     }
+  }
+
+  function shuffleArray(arr) {
+    const copy = Array.isArray(arr) ? arr.slice() : [];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function clampQuestionLimit(test, rawValue = state.questionLimit) {
+    if (!test || !Array.isArray(test.questions)) return 0;
+    const total = test.questions.length;
+    const parsed = Number.parseInt(rawValue, 10);
+    const desired = Number.isFinite(parsed) && parsed > 0 ? parsed : total;
+    const limit = Math.max(1, Math.min(total, desired));
+    state.questionLimit = Math.max(1, desired);
+    return limit;
+  }
+
+  function buildSessionQuestions(test) {
+    if (!test || !Array.isArray(test.questions)) return [];
+    const limit = clampQuestionLimit(test);
+    const shuffled = shuffleArray(test.questions);
+    return shuffled.slice(0, limit);
+  }
+
+  function syncQuestionCountControl(test) {
+    if (!questionCountInputEl) return;
+    if (!test || !Array.isArray(test.questions) || !test.questions.length) {
+      questionCountInputEl.value = '';
+      questionCountInputEl.placeholder = '';
+      questionCountInputEl.disabled = true;
+      questionCountInputEl.title = '';
+      return;
+    }
+    const total = test.questions.length;
+    const limit = clampQuestionLimit(test);
+    questionCountInputEl.min = 1;
+    questionCountInputEl.max = total;
+    questionCountInputEl.value = limit;
+    questionCountInputEl.placeholder = total;
+    questionCountInputEl.disabled = false;
+    questionCountInputEl.title = `Dostępnych pytań: ${total}`;
   }
 
   // Theme handling
@@ -434,12 +482,23 @@
     };
   }
 
+  function initQuestionCountInput() {
+    if (!questionCountInputEl) return;
+    questionCountInputEl.addEventListener('change', () => {
+      const test = getCurrentTest();
+      if (!test) return;
+      const raw = Number.parseInt(questionCountInputEl.value, 10);
+      const limit = clampQuestionLimit(test, raw);
+      questionCountInputEl.value = limit;
+      resetTest();
+    });
+  }
+
   function updateQuizStats(currentIndex = state.currentIndex) {
     if (!quizStatsEl) return;
-    const test = getCurrentTest();
-    const total = test && test.questions ? test.questions.length : 0;
+    const total = getSessionTotal();
     if (!total) {
-      quizStatsEl.textContent = 'Pytanie — / — | Skutecznosc: —';
+      quizStatsEl.textContent = 'Pytanie - / - | Skutecznosc: -';
       return;
     }
     const answeredTotal = state.answers.filter(Boolean).length;
@@ -453,14 +512,22 @@
   }
 
   // Quiz logic
+  function getSessionQuestions() {
+    return Array.isArray(state.sessionQuestions) ? state.sessionQuestions : [];
+  }
+
+  function getSessionTotal() {
+    return getSessionQuestions().length;
+  }
+
   function getCurrentTest() {
     return allTests.find(t => t.id === state.currentTestId);
   }
 
   function getCurrentQuestion() {
-    const test = getCurrentTest();
-    if (!test) return null;
-    return test.questions[state.currentIndex] || null;
+    const questions = getSessionQuestions();
+    if (!questions.length) return null;
+    return questions[state.currentIndex] || null;
   }
 
   function getTopicById(id) {
@@ -492,7 +559,9 @@
   function resetTest() {
     const test = getCurrentTest();
     updateHeaderTestName();
-    if (!test) {
+    syncQuestionCountControl(test);
+    if (!test || !Array.isArray(test.questions) || !test.questions.length) {
+      state.sessionQuestions = [];
       showNoTestsMessage();
       updateSidebar();
       updateHistory();
@@ -500,10 +569,17 @@
     }
 
     resetPerTopic();
+    state.sessionQuestions = buildSessionQuestions(test);
     state.currentIndex = 0;
     state.correctCount = 0;
     state.answered = false;
-    state.answers = [];
+    state.answers = new Array(getSessionTotal());
+    if (!state.sessionQuestions.length) {
+      showNoTestsMessage();
+      updateSidebar();
+      updateHistory();
+      return;
+    }
     restartBtn.disabled = false;
     renderQuestion();
     updateSidebar();
@@ -514,9 +590,12 @@
     const test = getCurrentTest();
     if (!test) return;
 
-    const total = test.questions.length;
+    const total = getSessionTotal();
     const q = getCurrentQuestion();
-    if (!q) return;
+    if (!q) {
+      showNoTestsMessage();
+      return;
+    }
     const topic = getTopicById(q.topicId);
     const saved = state.answers[state.currentIndex];
 
@@ -546,7 +625,7 @@
 
     const answeredTotal = state.answers.filter(Boolean).length;
     updateQuizStats(state.currentIndex);
-    globalStatsEl.textContent = `Poprawnych odpowiedzi: ${state.correctCount} z ${answeredTotal} (na razie sprawdzonych pytań).`;
+    globalStatsEl.textContent = `Poprawnych odpowiedzi: ${state.correctCount} z ${answeredTotal} (z ${total} losowych pytań).`;
 
     const hasText = !!(q.ruleText || q.ruleHtml || (topic && (topic.ruleText || topic.ruleHtml)));
     const hasVideo = !!(q.ruleVideo || (topic && topic.ruleVideo));
@@ -583,8 +662,8 @@
   function handleAnswer(index) {
     if (state.answered) return;
     const q = getCurrentQuestion();
-    const topic = getTopicById(q.topicId);
     if (!q) return;
+    const topic = getTopicById(q.topicId);
 
     state.answered = true;
     safePlay(sfx.click);
@@ -623,12 +702,10 @@
       topicId: q.topicId
     };
 
-    const test = getCurrentTest();
-    const total = test.questions.length;
-    const answeredTotal = state.currentIndex + 1;
-    const acc = Math.round((state.correctCount / answeredTotal) * 100);
+    const total = getSessionTotal();
+    const answeredTotal = state.answers.filter(Boolean).length;
     updateQuizStats(state.currentIndex);
-    globalStatsEl.textContent = `Poprawnych odpowiedzi: ${state.correctCount} z ${answeredTotal}.`;
+    globalStatsEl.textContent = `Poprawnych odpowiedzi: ${state.correctCount} z ${answeredTotal} (z ${total} losowych pytań).`;
 
     updateSidebar();
 
@@ -638,16 +715,15 @@
   }
 
   function nextQuestion() {
-    const test = getCurrentTest();
-    if (!test) return;
+    const total = getSessionTotal();
+    if (!total) return;
 
-    if (state.currentIndex < test.questions.length - 1) {
+    if (state.currentIndex < total - 1) {
       safePlay(sfx.click);
       state.currentIndex++;
       renderQuestion();
     } else {
       safePlay(sfx.click);
-      const total = test.questions.length;
       const acc = Math.round((state.correctCount / total) * 100);
       feedbackEl.innerHTML =
         `<div class="feedback correct"><b>Koniec testu!</b><br>` +
@@ -820,7 +896,7 @@
   function saveAttempt() {
     const test = getCurrentTest();
     if (!test) return;
-    const total = test.questions.length;
+    const total = getSessionTotal();
     const acc = Math.round((state.correctCount / total) * 100);
     const perTopicSummary = {};
     Object.keys(state.perTopic).forEach(id => {
@@ -926,6 +1002,7 @@
   syncFilterPanelOpen();
 
   initThemeSelect();
+  initQuestionCountInput();
   loadAllTests()
     .then(() => {
       if (allTests.length) {
