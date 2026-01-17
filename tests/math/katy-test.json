@@ -1,0 +1,1332 @@
+{
+  "id": "katy-test",
+  "name": "Kąty – test sprawdzający",
+  "topics": [
+    {
+      "id": "def",
+      "name": "Definicja kąta i elementy",
+      "ruleTitle": "Czym jest kąt",
+      "ruleText": "Kąt jest figurą geometryczną utworzoną przez dwie półproste o wspólnym początku. Wspólny punkt półprostych nazywamy wierzchołkiem kąta, a półproste – ramionami. Kąt zaznaczamy najczęściej za pomocą małego łuku między ramionami."
+    },
+    {
+      "id": "types",
+      "name": "Rodzaje kątów",
+      "ruleTitle": "Podział kątów",
+      "ruleText": "Kąty dzielimy m.in. na ostre, proste, rozwarte, półpełne, pełne oraz wklęsłe. Podział zależy od miary kąta, czyli od stopni, jakie obejmuje. Znajomość rodzajów kątów pomaga poprawnie opisywać i porównywać figury."
+    },
+    {
+      "id": "naming",
+      "name": "Oznaczanie kątów",
+      "ruleTitle": "Jak oznaczamy kąty",
+      "ruleText": "Kąty możemy oznaczać małymi literami alfabetu greckiego, np. α, β, γ. Możemy je także nazywać trzema wielkimi literami, gdzie środkowa litera oznacza wierzchołek. Poprawne oznaczanie kątów jest ważne przy opisie rysunków geometrycznych."
+    },
+    {
+      "id": "practice",
+      "name": "Zastosowania i zadania",
+      "ruleTitle": "Kąty w praktyce",
+      "ruleText": "Kąty spotykamy w codziennych sytuacjach, np. na zegarze lub w rysunkach technicznych. Obrót wskazówek zegara pozwala zrozumieć pojęcie kąta pełnego i półpełnego. Ćwiczenia pomagają utrwalić rozpoznawanie i klasyfikowanie kątów."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topicId": "def",
+      "q": "Pytanie 1: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 2,
+      "topicId": "def",
+      "q": "Pytanie 2: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 3,
+      "topicId": "def",
+      "q": "Pytanie 3: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 4,
+      "topicId": "def",
+      "q": "Pytanie 4: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 5,
+      "topicId": "def",
+      "q": "Pytanie 5: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 6,
+      "topicId": "def",
+      "q": "Pytanie 6: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 7,
+      "topicId": "def",
+      "q": "Pytanie 7: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 8,
+      "topicId": "def",
+      "q": "Pytanie 8: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 9,
+      "topicId": "def",
+      "q": "Pytanie 9: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 10,
+      "topicId": "def",
+      "q": "Pytanie 10: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 11,
+      "topicId": "def",
+      "q": "Pytanie 11: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 12,
+      "topicId": "def",
+      "q": "Pytanie 12: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 13,
+      "topicId": "def",
+      "q": "Pytanie 13: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 14,
+      "topicId": "def",
+      "q": "Pytanie 14: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 15,
+      "topicId": "def",
+      "q": "Pytanie 15: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 16,
+      "topicId": "def",
+      "q": "Pytanie 16: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 17,
+      "topicId": "def",
+      "q": "Pytanie 17: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 18,
+      "topicId": "def",
+      "q": "Pytanie 18: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 19,
+      "topicId": "def",
+      "q": "Pytanie 19: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 20,
+      "topicId": "def",
+      "q": "Pytanie 20: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 21,
+      "topicId": "def",
+      "q": "Pytanie 21: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 22,
+      "topicId": "def",
+      "q": "Pytanie 22: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 23,
+      "topicId": "def",
+      "q": "Pytanie 23: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 24,
+      "topicId": "def",
+      "q": "Pytanie 24: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 25,
+      "topicId": "def",
+      "q": "Pytanie 25: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 26,
+      "topicId": "types",
+      "q": "Pytanie 26: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 27,
+      "topicId": "types",
+      "q": "Pytanie 27: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 28,
+      "topicId": "types",
+      "q": "Pytanie 28: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 29,
+      "topicId": "types",
+      "q": "Pytanie 29: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 30,
+      "topicId": "types",
+      "q": "Pytanie 30: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 31,
+      "topicId": "types",
+      "q": "Pytanie 31: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 32,
+      "topicId": "types",
+      "q": "Pytanie 32: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 33,
+      "topicId": "types",
+      "q": "Pytanie 33: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 34,
+      "topicId": "types",
+      "q": "Pytanie 34: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 35,
+      "topicId": "types",
+      "q": "Pytanie 35: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 36,
+      "topicId": "types",
+      "q": "Pytanie 36: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 37,
+      "topicId": "types",
+      "q": "Pytanie 37: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 38,
+      "topicId": "types",
+      "q": "Pytanie 38: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 39,
+      "topicId": "types",
+      "q": "Pytanie 39: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 40,
+      "topicId": "types",
+      "q": "Pytanie 40: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 41,
+      "topicId": "types",
+      "q": "Pytanie 41: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 42,
+      "topicId": "types",
+      "q": "Pytanie 42: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 43,
+      "topicId": "types",
+      "q": "Pytanie 43: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 44,
+      "topicId": "types",
+      "q": "Pytanie 44: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 45,
+      "topicId": "types",
+      "q": "Pytanie 45: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 46,
+      "topicId": "types",
+      "q": "Pytanie 46: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 47,
+      "topicId": "types",
+      "q": "Pytanie 47: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 48,
+      "topicId": "types",
+      "q": "Pytanie 48: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 49,
+      "topicId": "types",
+      "q": "Pytanie 49: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 50,
+      "topicId": "types",
+      "q": "Pytanie 50: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 51,
+      "topicId": "naming",
+      "q": "Pytanie 51: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 52,
+      "topicId": "naming",
+      "q": "Pytanie 52: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 53,
+      "topicId": "naming",
+      "q": "Pytanie 53: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 54,
+      "topicId": "naming",
+      "q": "Pytanie 54: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 55,
+      "topicId": "naming",
+      "q": "Pytanie 55: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 56,
+      "topicId": "naming",
+      "q": "Pytanie 56: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 57,
+      "topicId": "naming",
+      "q": "Pytanie 57: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 58,
+      "topicId": "naming",
+      "q": "Pytanie 58: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 59,
+      "topicId": "naming",
+      "q": "Pytanie 59: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 60,
+      "topicId": "naming",
+      "q": "Pytanie 60: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 61,
+      "topicId": "naming",
+      "q": "Pytanie 61: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 62,
+      "topicId": "naming",
+      "q": "Pytanie 62: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 63,
+      "topicId": "naming",
+      "q": "Pytanie 63: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 64,
+      "topicId": "naming",
+      "q": "Pytanie 64: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 65,
+      "topicId": "naming",
+      "q": "Pytanie 65: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 66,
+      "topicId": "naming",
+      "q": "Pytanie 66: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 67,
+      "topicId": "naming",
+      "q": "Pytanie 67: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 68,
+      "topicId": "naming",
+      "q": "Pytanie 68: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 69,
+      "topicId": "naming",
+      "q": "Pytanie 69: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 70,
+      "topicId": "naming",
+      "q": "Pytanie 70: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 71,
+      "topicId": "naming",
+      "q": "Pytanie 71: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 72,
+      "topicId": "naming",
+      "q": "Pytanie 72: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 73,
+      "topicId": "naming",
+      "q": "Pytanie 73: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 74,
+      "topicId": "naming",
+      "q": "Pytanie 74: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 75,
+      "topicId": "naming",
+      "q": "Pytanie 75: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 76,
+      "topicId": "practice",
+      "q": "Pytanie 76: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 77,
+      "topicId": "practice",
+      "q": "Pytanie 77: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 78,
+      "topicId": "practice",
+      "q": "Pytanie 78: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 79,
+      "topicId": "practice",
+      "q": "Pytanie 79: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 80,
+      "topicId": "practice",
+      "q": "Pytanie 80: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 81,
+      "topicId": "practice",
+      "q": "Pytanie 81: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 82,
+      "topicId": "practice",
+      "q": "Pytanie 82: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 83,
+      "topicId": "practice",
+      "q": "Pytanie 83: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 84,
+      "topicId": "practice",
+      "q": "Pytanie 84: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 85,
+      "topicId": "practice",
+      "q": "Pytanie 85: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 86,
+      "topicId": "practice",
+      "q": "Pytanie 86: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 87,
+      "topicId": "practice",
+      "q": "Pytanie 87: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 88,
+      "topicId": "practice",
+      "q": "Pytanie 88: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 89,
+      "topicId": "practice",
+      "q": "Pytanie 89: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 90,
+      "topicId": "practice",
+      "q": "Pytanie 90: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 91,
+      "topicId": "practice",
+      "q": "Pytanie 91: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 92,
+      "topicId": "practice",
+      "q": "Pytanie 92: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 93,
+      "topicId": "practice",
+      "q": "Pytanie 93: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 94,
+      "topicId": "practice",
+      "q": "Pytanie 94: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 95,
+      "topicId": "practice",
+      "q": "Pytanie 95: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 96,
+      "topicId": "practice",
+      "q": "Pytanie 96: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 3,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 97,
+      "topicId": "practice",
+      "q": "Pytanie 97: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 1,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 98,
+      "topicId": "practice",
+      "q": "Pytanie 98: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 99,
+      "topicId": "practice",
+      "q": "Pytanie 99: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 0,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    },
+    {
+      "id": 100,
+      "topicId": "practice",
+      "q": "Pytanie 100: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "options": [
+        "Odpowiedź A",
+        "Odpowiedź B",
+        "Odpowiedź C",
+        "Odpowiedź D"
+      ],
+      "answer": 2,
+      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+    }
+  ]
+}

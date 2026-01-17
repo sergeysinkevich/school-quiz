@@ -1,0 +1,1232 @@
+{
+  "id": "proste-prostopadle-i-rownolegle",
+  "name": "Proste prostopadłe i proste równoległe",
+  "topics": [
+    {
+      "id": "perpendicular",
+      "name": "Proste prostopadłe",
+      "ruleTitle": "Proste prostopadłe",
+      "ruleText": "Proste prostopadłe przecinają się pod kątem prostym (90°). Zapisujemy: a ⟂ b."
+    },
+    {
+      "id": "parallel",
+      "name": "Proste równoległe",
+      "ruleTitle": "Proste równoległe",
+      "ruleText": "Proste równoległe nie przecinają się i leżą w jednej płaszczyźnie. Zapisujemy: a ∥ b."
+    },
+    {
+      "id": "point_distance",
+      "name": "Odległość punktu od prostej",
+      "ruleTitle": "Odległość punktu od prostej",
+      "ruleText": "Odległość punktu od prostej to długość najkrótszego odcinka łączącego punkt z prostą, czyli odcinka prostopadłego."
+    },
+    {
+      "id": "line_distance",
+      "name": "Odległość między prostymi równoległymi",
+      "ruleTitle": "Odległość między prostymi",
+      "ruleText": "Odległość między prostymi równoległymi to długość odcinka prostopadłego do obu prostych."
+    }
+  ],
+  "questions": [
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 1)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 2)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 3)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 4)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 5)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 6)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 7)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 8)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 9)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 10)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 11)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 12)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 13)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 14)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 15)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 16)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 17)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 18)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 19)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 20)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 21)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 22)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 23)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 24)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 25)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 26)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 27)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 28)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 29)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 30)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 31)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 32)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 33)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 34)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 35)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 36)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 37)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 38)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 39)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 40)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 41)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 42)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 43)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 44)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 45)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 46)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 47)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 48)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 49)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 50)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 51)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 52)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 53)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 54)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 55)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 56)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 57)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 58)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 59)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 60)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 61)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 62)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 63)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 64)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 65)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 66)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 67)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 68)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 69)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 70)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 71)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 72)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 73)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 74)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 75)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 76)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 77)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 78)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 79)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 80)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 81)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 82)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 83)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 84)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 85)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 86)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 87)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 88)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 89)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 90)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 91)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 92)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 93)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 94)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 95)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 96)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    },
+    {
+      "topicId": "perpendicular",
+      "q": "Które zdanie poprawnie opisuje proste prostopadłe? (Pytanie 97)",
+      "options": [
+        "Nie mają punktów wspólnych",
+        "Przecinają się pod kątem 90°",
+        "Leżą na jednej prostej",
+        "Zawsze są równoległe"
+      ],
+      "answer": 1,
+      "expl": "Proste prostopadłe przecinają się pod kątem prostym, czyli 90°."
+    },
+    {
+      "topicId": "parallel",
+      "q": "Jakie jest wzajemne położenie prostych, które nie przecinają się? (Pytanie 98)",
+      "options": [
+        "Prostopadłe",
+        "Równoległe",
+        "Przecinające się",
+        "Zbieżne"
+      ],
+      "answer": 1,
+      "expl": "Proste, które się nie przecinają, są równoległe."
+    },
+    {
+      "topicId": "point_distance",
+      "q": "Co oznacza odległość punktu od prostej? (Pytanie 99)",
+      "options": [
+        "Długość dowolnego odcinka do prostej",
+        "Najdłuższy odcinek łączący punkt z prostą",
+        "Długość odcinka prostopadłego do prostej",
+        "Odległość mierzona wzdłuż prostej"
+      ],
+      "answer": 2,
+      "expl": "Odległość punktu od prostej to długość odcinka prostopadłego."
+    },
+    {
+      "topicId": "line_distance",
+      "q": "Jak mierzymy odległość między prostymi równoległymi? (Pytanie 100)",
+      "options": [
+        "Wzdłuż jednej z prostych",
+        "Dowolnym odcinkiem łączącym proste",
+        "Najkrótszym odcinkiem prostopadłym do obu prostych",
+        "Tylko przy użyciu linijki"
+      ],
+      "answer": 2,
+      "expl": "Odległość między prostymi równoległymi to długość najkrótszego odcinka prostopadłego."
+    }
+  ]
+}
