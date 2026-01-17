@@ -15,10 +15,11 @@
   const THEME_STORAGE_KEY = 'bpQuizTheme_v1';
   const HISTORY_KEY = 'bpQuizHistory_v1';
   const FALLBACK_TEST_FILES = [
-    'tests/cm-on-5b.json',
-    'tests/math-basics.json',
-    'tests/english-basics.json',
-    'tests/science-basics.json'
+    'tests/polish/cm-on-5b.json',
+    'tests/math/fractions-basics.json',
+    'tests/english/eng-vocab.json',
+    'tests/science/solar-system.json',
+    'tests/geography/geo-on-5b-temat-2-3.json'
   ];
 
   // Embedded dataset used if fetch is blocked (e.g., file:// without a server)
@@ -332,30 +333,177 @@
     return res.json();
   }
 
-  async function listTestFiles() {
+  function normalizeHref(basePath, href) {
+    if (!href || typeof href !== 'string') return null;
+    if (href.startsWith('http') || href.startsWith('#')) return null;
+    if (href.includes('..')) return null;
+    const cleanBase = basePath.replace(/\/+$/, '');
+    const cleanHref = href.replace(/^\.\/+/, '').replace(/\/+$/, '');
+    if (!cleanHref) return null;
+    if (cleanHref.startsWith('/')) return cleanHref.replace(/^\//, '');
+    if (cleanHref.startsWith('tests/')) return cleanHref;
+    return `${cleanBase}/${cleanHref}`;
+  }
+
+  function parseDirectoryJsonLinks(html, basePath) {
+    const matches = [...html.matchAll(/href="([^"]+)"/gi)];
+    const files = matches
+      .map(m => m[1])
+      .map(href => normalizeHref(basePath, href))
+      .filter(Boolean)
+      .filter(href => href.toLowerCase().endsWith('.json'))
+      .filter(href => !href.toLowerCase().endsWith('/index.json') && !href.toLowerCase().endsWith('index.json'))
+      .filter(href => !href.toLowerCase().endsWith('/subject.json') && !href.toLowerCase().endsWith('subject.json'));
+    return Array.from(new Set(files));
+  }
+
+  function parseDirectoryFolders(html, basePath) {
+    const matches = [...html.matchAll(/href="([^"]+\/?)"/gi)];
+    const dirs = matches
+      .map(m => m[1])
+      .filter(href => href.endsWith('/') && !href.toLowerCase().endsWith('../'))
+      .map(href => normalizeHref(basePath, href))
+      .filter(Boolean);
+    return Array.from(new Set(dirs));
+  }
+
+  function parseIndexManifest(data) {
+    const result = { subjects: [], legacyFiles: [] };
+
+    if (Array.isArray(data)) {
+      result.legacyFiles = data.filter(v => typeof v === 'string');
+      return result;
+    }
+
+    if (data && typeof data === 'object') {
+      if (Array.isArray(data.subjects)) {
+        result.subjects = data.subjects
+          .map(sub => {
+            if (!sub || typeof sub !== 'object') return null;
+            const id = sub.id || sub.subjectId || sub.name;
+            const path = (sub.path || (id ? `tests/${id}` : '')).replace(/\/+$/, '');
+            if (!id || !path) return null;
+            return {
+              id,
+              name: sub.name || sub.subjectName || id,
+              path,
+              tests: Array.isArray(sub.tests) ? sub.tests.slice() : null
+            };
+          })
+          .filter(Boolean);
+      }
+
+      if (Array.isArray(data.legacyFiles)) {
+        result.legacyFiles = data.legacyFiles.filter(v => typeof v === 'string');
+      }
+    }
+
+    return result;
+  }
+
+  async function discoverFromDirectory(basePath) {
+    const fallback = { subjects: [], legacyFiles: [] };
+    try {
+      const res = await fetch(`${basePath}/`, { cache: 'no-cache' });
+      if (!res.ok) return fallback;
+      const text = await res.text();
+      const legacyFiles = parseDirectoryJsonLinks(text, basePath).filter(path => !/tests\/index\.json$/i.test(path));
+      const dirs = parseDirectoryFolders(text, basePath);
+      const subjects = dirs.map(path => {
+        const id = path.split('/').filter(Boolean).pop();
+        return { id, name: id, path };
+      });
+      return {
+        subjects,
+        legacyFiles
+      };
+    } catch (_) {
+      return fallback;
+    }
+  }
+
+  async function loadTestManifest() {
+    let manifest = { subjects: [], legacyFiles: [] };
+
     try {
       const res = await fetch('tests/index.json', { cache: 'no-cache' });
       if (res.ok) {
-        const files = await res.json();
-        if (Array.isArray(files) && files.length) return files;
+        const data = await res.json();
+        manifest = parseIndexManifest(data);
       }
     } catch (_) {}
 
+    if (!manifest.subjects.length && !manifest.legacyFiles.length) {
+      manifest = await discoverFromDirectory('tests');
+    }
+
+    if (!manifest.legacyFiles.length) {
+      manifest.legacyFiles = FALLBACK_TEST_FILES.slice();
+    }
+
+    return manifest;
+  }
+
+  async function loadSubjectMeta(subjectEntry) {
+    const basePath = (subjectEntry.path || `tests/${subjectEntry.id || subjectEntry.subjectId || ''}`).replace(/\/+$/, '');
+    let meta = {
+      id: subjectEntry.id || subjectEntry.subjectId || basePath.split('/').pop(),
+      name: subjectEntry.name || subjectEntry.subjectName || 'Przedmiot',
+      path: basePath
+    };
+
     try {
-      const res = await fetch('tests/', { cache: 'no-cache' });
+      const res = await fetch(`${basePath}/subject.json`, { cache: 'no-cache' });
+      if (res.ok) {
+        const fromFile = await res.json();
+        if (fromFile && typeof fromFile === 'object') {
+          meta = {
+            ...meta,
+            ...fromFile,
+            path: basePath
+          };
+        }
+      }
+    } catch (_) {}
+
+    if (!meta.id) meta.id = basePath.split('/').filter(Boolean).pop() || `subject-${Math.random().toString(16).slice(2, 8)}`;
+    if (!meta.name) meta.name = meta.id;
+    return meta;
+  }
+
+  async function listFilesForSubject(subjectMeta, testsFromIndex) {
+    const basePath = subjectMeta.path.replace(/\/+$/, '');
+
+    if (Array.isArray(testsFromIndex) && testsFromIndex.length) {
+      const files = testsFromIndex
+        .map(href => normalizeHref(basePath, typeof href === 'string' ? href : ''))
+        .filter(Boolean);
+      if (files.length) return Array.from(new Set(files));
+    }
+
+    try {
+      const res = await fetch(`${basePath}/`, { cache: 'no-cache' });
       if (res.ok) {
         const text = await res.text();
-        const matches = [...text.matchAll(/href="([^"]+\.json)"/gi)];
-        const files = matches
-          .map(m => m[1])
-          .filter(Boolean)
-          .map(href => href.startsWith('tests/') ? href : `tests/${href}`)
-          .filter((v, i, arr) => arr.indexOf(v) === i);
+        const files = parseDirectoryJsonLinks(text, basePath);
         if (files.length) return files;
       }
     } catch (_) {}
 
-    return FALLBACK_TEST_FILES.slice();
+    return [];
+  }
+
+  function normalizeTestEntry(test, subjectMeta) {
+    if (!test || typeof test !== 'object') return null;
+    if (!Array.isArray(test.questions) || !Array.isArray(test.topics)) return null;
+    const subjectId = test.subjectId || subjectMeta.id;
+    const subjectName = test.subjectName || subjectMeta.name || subjectId || 'Przedmiot';
+    if (!subjectId) return null;
+    return {
+      ...test,
+      subjectId,
+      subjectName
+    };
   }
 
   function normalizeDatasets(datasets) {
@@ -371,12 +519,8 @@
       }
 
       dataset.tests.forEach(test => {
-        if (!test || !Array.isArray(test.questions) || !Array.isArray(test.topics)) return;
-        collectedTests.push({
-          ...test,
-          subjectId,
-          subjectName
-        });
+        const normalized = normalizeTestEntry(test, { id: subjectId, name: subjectName, path: '' });
+        if (normalized) collectedTests.push(normalized);
       });
     });
 
@@ -387,30 +531,71 @@
   }
 
   async function loadAllTests() {
-    const datasets = [];
-    const files = await listTestFiles();
+    const aggregatedTests = [];
+    const subjectMap = new Map();
+    const manifest = await loadTestManifest();
 
-    for (const file of files) {
-      try {
-        const data = await fetchJson(file);
-        datasets.push(data);
-      } catch (err) {
-        console.warn(err.message || err);
+    if (manifest.subjects.length) {
+      for (const subjectEntry of manifest.subjects) {
+        const subjectMeta = await loadSubjectMeta(subjectEntry);
+        if (!subjectMeta || !subjectMeta.id) continue;
+
+        subjectMap.set(subjectMeta.id, { id: subjectMeta.id, name: subjectMeta.name });
+        const files = await listFilesForSubject(subjectMeta, subjectEntry.tests);
+
+        for (const file of files) {
+          try {
+            const data = await fetchJson(file);
+            const normalized = normalizeTestEntry(data, subjectMeta);
+            if (normalized) aggregatedTests.push(normalized);
+          } catch (err) {
+            console.warn(err.message || err);
+          }
+        }
       }
     }
 
-    if (!datasets.length) {
-      datasets.push(...EMBEDDED_DATASETS);
+    if (!aggregatedTests.length && manifest.legacyFiles.length) {
+      const datasets = [];
+      const singleTests = [];
+      for (const file of manifest.legacyFiles) {
+        try {
+          const data = await fetchJson(file);
+          if (data && Array.isArray(data.tests)) {
+            datasets.push(data);
+          } else {
+            const subjectId = data && (data.subjectId || data.subjectName) || 'misc';
+            const subjectName = data && (data.subjectName || data.subjectId) || 'Przedmiot';
+            const normalized = normalizeTestEntry(data, { id: subjectId, name: subjectName, path: '' });
+            if (normalized) singleTests.push(normalized);
+          }
+        } catch (err) {
+          console.warn(err.message || err);
+        }
+      }
+
+      if (!datasets.length && !singleTests.length) {
+        datasets.push(...EMBEDDED_DATASETS);
+      }
+
+      const { aggregatedTests: legacyTests, aggregatedSubjects } = normalizeDatasets(datasets);
+      legacyTests.forEach(test => aggregatedTests.push(test));
+      aggregatedSubjects.forEach(sub => subjectMap.set(sub.id, sub));
+      singleTests.forEach(test => {
+        aggregatedTests.push(test);
+        if (test.subjectId && !subjectMap.has(test.subjectId)) {
+          subjectMap.set(test.subjectId, { id: test.subjectId, name: test.subjectName || test.subjectId });
+        }
+      });
     }
 
-    const { aggregatedTests, aggregatedSubjects } = normalizeDatasets(datasets);
     if (!aggregatedTests.length) {
       console.error('No valid tests found.');
       return;
     }
 
     allTests = aggregatedTests;
-    subjects = aggregatedSubjects;
+    subjects = Array.from(subjectMap.values());
     ensureStateDefaults();
     populateSubjectSelect();
     populateTestSelect(state.currentSubjectId);

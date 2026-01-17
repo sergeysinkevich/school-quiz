@@ -1,0 +1,70 @@
+{
+  "id": "eng-vocab",
+  "name": "Vocabulary - everyday",
+  "topics": [
+    {
+      "id": "food",
+      "name": "Food",
+      "ruleTitle": "Food basics",
+      "ruleText": "Common food words: bread, butter, milk, cheese, apple, banana.",
+      "ruleUrl": "https://dictionary.cambridge.org/"
+    },
+    {
+      "id": "places",
+      "name": "Places",
+      "ruleTitle": "Places in town",
+      "ruleText": "Place words: school, library, hospital, bank, bakery.",
+      "ruleUrl": "https://dictionary.cambridge.org/"
+    }
+  ],
+  "questions": [
+    {
+      "topicId": "food",
+      "q": "Jak po angielsku będzie 'chleb'?",
+      "options": [
+        "bread",
+        "cheese",
+        "meat",
+        "butter"
+      ],
+      "answer": 0,
+      "expl": "\"Bread\" to chleb."
+    },
+    {
+      "topicId": "food",
+      "q": "Jak po angielsku będzie 'banan'?",
+      "options": [
+        "pineapple",
+        "banana",
+        "apple",
+        "berry"
+      ],
+      "answer": 1,
+      "expl": "\"Banana\" to banan."
+    },
+    {
+      "topicId": "places",
+      "q": "Jak po angielsku będzie 'biblioteka'?",
+      "options": [
+        "bank",
+        "library",
+        "hospital",
+        "bakery"
+      ],
+      "answer": 1,
+      "expl": "\"Library\" to biblioteka."
+    },
+    {
+      "topicId": "places",
+      "q": "Jak po angielsku będzie 'piekarnia'?",
+      "options": [
+        "bakery",
+        "bank",
+        "school",
+        "station"
+      ],
+      "answer": 0,
+      "expl": "\"Bakery\" to piekarnia."
+    }
+  ]
+}

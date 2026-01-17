@@ -1,0 +1,70 @@
+{
+  "id": "eng-grammar",
+  "name": "Grammar - to be / have got",
+  "topics": [
+    {
+      "id": "to-be",
+      "name": "To be",
+      "ruleTitle": "Czasownik 'to be'",
+      "ruleText": "Odmiana: I am, you are, he/she/it is, we are, you are, they are.",
+      "ruleUrl": "https://learnenglish.britishcouncil.org/"
+    },
+    {
+      "id": "have-got",
+      "name": "Have got",
+      "ruleTitle": "Konstrukcja 'have got'",
+      "ruleText": "I/you/we/they have got; he/she/it has got. Użycie do posiadania.",
+      "ruleUrl": "https://learnenglish.britishcouncil.org/"
+    }
+  ],
+  "questions": [
+    {
+      "topicId": "to-be",
+      "q": "Wybierz poprawną formę: She ___ happy.",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "answer": 1,
+      "expl": "She is happy."
+    },
+    {
+      "topicId": "to-be",
+      "q": "Wybierz poprawną formę: They ___ at school.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "answer": 1,
+      "expl": "They are at school."
+    },
+    {
+      "topicId": "have-got",
+      "q": "Uzupełnij: He ___ a bike.",
+      "options": [
+        "have got",
+        "has got",
+        "have",
+        "got"
+      ],
+      "answer": 1,
+      "expl": "He has got a bike."
+    },
+    {
+      "topicId": "have-got",
+      "q": "Uzupełnij: We ___ two cats.",
+      "options": [
+        "has got",
+        "have got",
+        "got",
+        "have"
+      ],
+      "answer": 1,
+      "expl": "We have got two cats."
+    }
+  ]
+}

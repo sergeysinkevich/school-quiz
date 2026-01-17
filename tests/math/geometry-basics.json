@@ -1,0 +1,70 @@
+{
+  "id": "geometry-basics",
+  "name": "Geometria - kąty i figury",
+  "topics": [
+    {
+      "id": "angles",
+      "name": "Kąty",
+      "ruleTitle": "Rodzaje kątów",
+      "ruleText": "Kąt ostry < 90°, prosty = 90°, rozwarty > 90° i < 180°.",
+      "ruleUrl": "https://pl.wikipedia.org/wiki/K%C4%85t"
+    },
+    {
+      "id": "triangles",
+      "name": "Trójkąty",
+      "ruleTitle": "Rodzaje trójkątów",
+      "ruleText": "Trójkąty dzielimy m.in. na ostrokątne, prostokątne i rozwartokątne oraz równoboczne, równoramienne, różnoboczne.",
+      "ruleUrl": "https://pl.wikipedia.org/wiki/Tr%C3%B3jk%C4%85t"
+    }
+  ],
+  "questions": [
+    {
+      "topicId": "angles",
+      "q": "Kąt o mierze 120° jest...",
+      "options": [
+        "ostry",
+        "prosty",
+        "rozwarty",
+        "pełny"
+      ],
+      "answer": 2,
+      "expl": "120° jest większe niż 90°, mniejsze niż 180°."
+    },
+    {
+      "topicId": "angles",
+      "q": "Kąt prosty ma...",
+      "options": [
+        "45°",
+        "60°",
+        "90°",
+        "180°"
+      ],
+      "answer": 2,
+      "expl": "Definicja kąta prostego to 90°."
+    },
+    {
+      "topicId": "triangles",
+      "q": "Trójkąt prostokątny ma...",
+      "options": [
+        "dwa kąty proste",
+        "jeden kąt prosty",
+        "trzy kąty ostre",
+        "brak kąta prostego"
+      ],
+      "answer": 1,
+      "expl": "Trójkąt prostokątny ma dokładnie jeden kąt prosty."
+    },
+    {
+      "topicId": "triangles",
+      "q": "Trójkąt równoboczny ma boki...",
+      "options": [
+        "równe",
+        "dwa równe",
+        "wszystkie różne",
+        "zawsze prostopadłe"
+      ],
+      "answer": 0,
+      "expl": "W trójkącie równobocznym wszystkie boki i kąty są równe."
+    }
+  ]
+}

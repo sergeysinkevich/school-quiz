@@ -1,0 +1,287 @@
+{
+  "id": "cm-on-5b",
+  "name": "Części mowy odmienne i nieodmienne 5B",
+  "topics": [
+    {
+      "id": "rzeczownik",
+      "name": "Rzeczownik",
+      "ruleTitle": "Rzeczownik - przypomnienie i uzupełnienie",
+      "ruleText": "Rzeczownik to część mowy, która nazywa osoby, zwierzęta, rośliny, przedmioty, miejsca i pojęcia. Odpowiada na pytania: kto? co?",
+      "ruleUrl": "https://epodreczniki.pl/a/rzeczownik/D2FQe8tts"
+    },
+    {
+      "id": "przymiotnik",
+      "name": "Przymiotnik",
+      "ruleTitle": "Przymiotnik - stopniowanie i użycie",
+      "ruleText": "Przymiotnik nazywa cechy osób, zwierząt i przedmiotów. Odpowiada na pytania: jaki? jaka? jakie? Można go stopniować: miły - milszy - najmilszy.",
+      "ruleUrl": "https://epodreczniki.pl/a/przymiotnik/D1BtLqN9I"
+    },
+    {
+      "id": "czasownik",
+      "name": "Czasownik",
+      "ruleTitle": "Czasownik - formy osobowe i nieosobowe",
+      "ruleText": "Czasownik nazywa czynności i stany. Odpowiada na pytania: co robi? co się dzieje? Ma formy osobowe i nieosobowe (np. bezokolicznik: czytać, pisać).",
+      "ruleUrl": "https://epodreczniki.pl/a/czasownik/Dm1fH4nL0"
+    },
+    {
+      "id": "przyslowek",
+      "name": "Przysłówek",
+      "ruleTitle": "Przysłówek - jak? gdzie? kiedy?",
+      "ruleText": "Przysłówek określa czasownik, przymiotnik lub inny przysłówek. Odpowiada m.in. na pytania: jak? gdzie? kiedy?",
+      "ruleUrl": "https://epodreczniki.pl/a/przyslowek/D12G6JZ1n"
+    },
+    {
+      "id": "liczebnik",
+      "name": "Liczebnik",
+      "ruleTitle": "Liczebnik - ilość i kolejność",
+      "ruleText": "Liczebnik określa ilość, liczbę i kolejność obiektów. Np. trzy, dziesięć, piąty, troje.",
+      "ruleUrl": "https://epodreczniki.pl/a/liczebnik/D1J2i2wsG"
+    },
+    {
+      "id": "przyimek",
+      "name": "Przyimek",
+      "ruleTitle": "Przyimek - wyrażenia przyimkowe",
+      "ruleText": "Przyimek łączy się z rzeczownikiem, tworząc wyrażenia przyimkowe, np. na stole, pod domem, do szkoły.",
+      "ruleUrl": "https://epodreczniki.pl/a/przyimek/D1XfB5Scq"
+    },
+    {
+      "id": "spojnik",
+      "name": "Spójnik",
+      "ruleTitle": "Spójnik - łączenie wyrazów i zdań",
+      "ruleText": "Spójniki łączą wyrazy i zdania, np. i, oraz, ale, lecz, więc.",
+      "ruleUrl": "https://epodreczniki.pl/a/spojnik/D17mkf9Wb"
+    }
+  ],
+  "questions": [
+    {
+      "topicId": "rzeczownik",
+      "q": "Rzeczownik to część mowy, która nazywa:",
+      "options": [
+        "cechy",
+        "czynności",
+        "osoby, zwierzęta i zjawiska",
+        "liczby"
+      ],
+      "answer": 2,
+      "expl": "Rzeczownik nazywa osoby, zwierzęta, rośliny, przedmioty, miejsca i pojęcia.",
+      "ruleHtml": "<p><strong>Szybka ściąga</strong></p><ul><li>Odpowiada na pytania: <b>kto? co?</b></li><li>Przykłady: <em>pies</em>, <em>las</em>, <em>radość</em>.</li></ul>",
+      "ruleVideo": "https://youtube.com/shorts/jBlhIHpEYb0"
+    },
+    {
+      "topicId": "rzeczownik",
+      "q": "Które z poniższych jest rzeczownikiem pospolitym?",
+      "options": [
+        "Wisła",
+        "Europa",
+        "dziewczynka",
+        "Marta"
+      ],
+      "answer": 2,
+      "expl": "Rzeczownik pospolity to nazwa ogólna, np. \"dziewczynka\"."
+    },
+    {
+      "topicId": "rzeczownik",
+      "q": "Które słowo jest rzeczownikiem własnym?",
+      "options": [
+        "książka",
+        "pies",
+        "Adam",
+        "lekarz"
+      ],
+      "answer": 2,
+      "expl": "Rzeczowniki własne zapisujemy wielką literą, np. \"Adam\"."
+    },
+    {
+      "topicId": "rzeczownik",
+      "q": "W którym wyrażeniu rzeczownik występuje w liczbie mnogiej?",
+      "options": [
+        "dom",
+        "dziecko",
+        "książki",
+        "drzewo"
+      ],
+      "answer": 2,
+      "expl": "\"Książki\" to liczba mnoga rzeczownika \"książka\"."
+    },
+    {
+      "topicId": "przymiotnik",
+      "q": "Przymiotnik określa zwykle:",
+      "options": [
+        "liczbę",
+        "nazwę osoby",
+        "cechę",
+        "miejsce"
+      ],
+      "answer": 2,
+      "expl": "Przymiotnik nazywa cechy, np. czerwony, wysoki, wesoły."
+    },
+    {
+      "topicId": "przymiotnik",
+      "q": "Wskaż przymiotnik:",
+      "options": [
+        "szybko",
+        "czerwony",
+        "dziewczynka",
+        "biega"
+      ],
+      "answer": 1,
+      "expl": "\"Czerwony\" to przymiotnik - określa kolor (cechę)."
+    },
+    {
+      "topicId": "przymiotnik",
+      "q": "Jak poprawnie stopniujemy przymiotnik \"miły\"?",
+      "options": [
+        "miły - milszy - najmilszy",
+        "miły - bardziej miły - najbardziej miły",
+        "miły - najmilszy - milszy",
+        "miły - milszy - bardziej miły"
+      ],
+      "answer": 0,
+      "expl": "Poprawne stopniowanie: miły - milszy - najmilszy."
+    },
+    {
+      "topicId": "czasownik",
+      "q": "Czasownik to część mowy, która nazywa:",
+      "options": [
+        "cechy",
+        "czynności i stany",
+        "przedmioty",
+        "uczucia"
+      ],
+      "answer": 1,
+      "expl": "Czasownik nazywa czynności i stany, np. czytać, spać, myśleć."
+    },
+    {
+      "topicId": "czasownik",
+      "q": "Która forma jest nieosobową formą czasownika?",
+      "options": [
+        "poszedł",
+        "pływać",
+        "idzie",
+        "siedzą"
+      ],
+      "answer": 1,
+      "expl": "Bezokolicznik (np. \"pływać\") jest formą nieosobową czasownika."
+    },
+    {
+      "topicId": "czasownik",
+      "q": "Do czego służy tryb rozkazujący?",
+      "options": [
+        "opisywania przeszłości",
+        "wyrażania nakazów i próśb",
+        "opisywania cech",
+        "zadawania pytań"
+      ],
+      "answer": 1,
+      "expl": "Tryb rozkazujący służy do wydawania poleceń i próśb, np. \"Czytaj!\", \"Usiądź!\"."
+    },
+    {
+      "topicId": "przyslowek",
+      "q": "Przysłówek określa zwykle:",
+      "options": [
+        "czasownik",
+        "rzeczownik",
+        "liczebnik",
+        "zaimek"
+      ],
+      "answer": 0,
+      "expl": "Przysłówek najczęściej określa czasownik: jak? gdzie? kiedy?"
+    },
+    {
+      "topicId": "przyslowek",
+      "q": "Wskaż przysłówek:",
+      "options": [
+        "czerwony",
+        "wczoraj",
+        "dziewczynka",
+        "smaczny"
+      ],
+      "answer": 1,
+      "expl": "\"Wczoraj\" odpowiada na pytanie \"kiedy?\" - to przysłówek."
+    },
+    {
+      "topicId": "liczebnik",
+      "q": "Liczebnik określa:",
+      "options": [
+        "tylko kolor",
+        "cechę osoby",
+        "liczbę, ilość lub kolejność",
+        "rodzaj rzeczownika"
+      ],
+      "answer": 2,
+      "expl": "Liczebnik określa ilość lub kolejność, np. trzy, piąty."
+    },
+    {
+      "topicId": "liczebnik",
+      "q": "Wskaż liczebnik porządkowy:",
+      "options": [
+        "pięć",
+        "piąty",
+        "piątka",
+        "pięcioro"
+      ],
+      "answer": 1,
+      "expl": "\"Piąty\" oznacza kolejność - to liczebnik porządkowy."
+    },
+    {
+      "topicId": "przyimek",
+      "q": "Które słowo jest przyimkiem?",
+      "options": [
+        "pod",
+        "bardzo",
+        "mama",
+        "niebieski"
+      ],
+      "answer": 0,
+      "expl": "\"Pod\" to przyimek - tworzy wyrażenia przyimkowe, np. pod stołem."
+    },
+    {
+      "topicId": "przyimek",
+      "q": "W którym wyrażeniu poprawnie użyto przyimka?",
+      "options": [
+        "idę dom",
+        "idę do domu",
+        "idę domem",
+        "idę domowi"
+      ],
+      "answer": 1,
+      "expl": "Poprawna forma: \"idę do domu\"."
+    },
+    {
+      "topicId": "spojnik",
+      "q": "Spójnik to część mowy, która:",
+      "options": [
+        "nazywa osoby",
+        "określa ilość",
+        "łączy wyrazy i zdania",
+        "określa cechy"
+      ],
+      "answer": 2,
+      "expl": "Spójnik łączy wyrazy i zdania, np. i, ale, lecz, lub."
+    },
+    {
+      "topicId": "spojnik",
+      "q": "Wskaż spójnik:",
+      "options": [
+        "przez",
+        "oraz",
+        "w",
+        "pod"
+      ],
+      "answer": 1,
+      "expl": "\"Oraz\" to spójnik łączący wyrazy i zdania."
+    },
+    {
+      "topicId": "spojnik",
+      "q": "Które zdanie zawiera spójnik przeciwstawny?",
+      "options": [
+        "Lubię psy i koty.",
+        "Chciałem iść, ale padało.",
+        "Poszedłem do kina i na lody.",
+        "Kupiłem chleb oraz masło."
+      ],
+      "answer": 1,
+      "expl": "\"Ale\" jest spójnikiem przeciwstawnym."
+    }
+  ]
+}

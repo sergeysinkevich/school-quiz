@@ -1,7 +1,47 @@
-[
-  "tests/polish.json",
-  "tests/math-basics.json",
-  "tests/english-basics.json",
-  "tests/science-basics.json",
-  "tests/geography.json"
-]
+{
+  "subjects": [
+    {
+      "id": "english",
+      "name": "Język angielski",
+      "path": "tests/english",
+      "tests": [
+        "eng-vocab.json",
+        "eng-grammar.json"
+      ]
+    },
+    {
+      "id": "geography",
+      "name": "Geografia",
+      "path": "tests/geography",
+      "tests": [
+        "geo-on-5b-temat-2-3.json"
+      ]
+    },
+    {
+      "id": "math",
+      "name": "Matematyka",
+      "path": "tests/math",
+      "tests": [
+        "fractions-basics.json",
+        "geometry-basics.json"
+      ]
+    },
+    {
+      "id": "polish",
+      "name": "Język polski",
+      "path": "tests/polish",
+      "tests": [
+        "cm-on-5b.json",
+        "email_test_1.json"
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Przyroda",
+      "path": "tests/science",
+      "tests": [
+        "solar-system.json"
+      ]
+    }
+  ]
+}

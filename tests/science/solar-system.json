@@ -1,0 +1,70 @@
+{
+  "id": "solar-system",
+  "name": "Układ Słoneczny",
+  "topics": [
+    {
+      "id": "planets",
+      "name": "Planety",
+      "ruleTitle": "Planety Układu Słonecznego",
+      "ruleText": "W kolejności od Słońca: Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun.",
+      "ruleUrl": "https://pl.wikipedia.org/wiki/Uk%C5%82ad_S%C5%82oneczny"
+    },
+    {
+      "id": "facts",
+      "name": "Ciekawostki",
+      "ruleTitle": "Ciekawostki o planetach",
+      "ruleText": "Największa planeta to Jowisz, najmniejsza to Merkury, a Ziemia jest trzecią planetą od Słońca.",
+      "ruleUrl": "https://pl.wikipedia.org/wiki/Planeta"
+    }
+  ],
+  "questions": [
+    {
+      "topicId": "planets",
+      "q": "Która planeta jest najbliżej Słońca?",
+      "options": [
+        "Mars",
+        "Merkury",
+        "Ziemia",
+        "Wenus"
+      ],
+      "answer": 1,
+      "expl": "Merkury krąży najbliżej Słońca."
+    },
+    {
+      "topicId": "planets",
+      "q": "Która planeta jest czwarta od Słońca?",
+      "options": [
+        "Mars",
+        "Ziemia",
+        "Wenus",
+        "Jowisz"
+      ],
+      "answer": 0,
+      "expl": "Mars jest czwartą planetą od Słońca."
+    },
+    {
+      "topicId": "facts",
+      "q": "Największa planeta Układu Słonecznego to...",
+      "options": [
+        "Saturn",
+        "Neptun",
+        "Jowisz",
+        "Uran"
+      ],
+      "answer": 2,
+      "expl": "Jowisz jest największy."
+    },
+    {
+      "topicId": "facts",
+      "q": "Która planeta słynie z pierścieni?",
+      "options": [
+        "Saturn",
+        "Mars",
+        "Ziemia",
+        "Merkury"
+      ],
+      "answer": 0,
+      "expl": "Pierścienie najbardziej znane są u Saturna."
+    }
+  ]
+}
