@@ -184,7 +184,7 @@
     currentSubjectId: null,
     currentTestId: null,
     currentIndex: 0,
-    questionLimit: null,
+    questionLimit: 'all',
     answered: false,
     correctCount: 0,
     perTopic: {},
@@ -247,10 +247,18 @@
   function clampQuestionLimit(test, rawValue = state.questionLimit) {
     if (!test || !Array.isArray(test.questions)) return 0;
     const total = test.questions.length;
-    const parsed = Number.parseInt(rawValue, 10);
-    const desired = Number.isFinite(parsed) && parsed > 0 ? parsed : total;
-    const limit = Math.max(1, Math.min(total, desired));
-    state.questionLimit = Math.max(1, desired);
+    const raw = rawValue === undefined ? state.questionLimit : rawValue;
+    if (raw === 'all' || raw === null || raw === '' || raw === undefined) {
+      state.questionLimit = 'all';
+      return total;
+    }
+    const parsed = Number.parseInt(raw, 10);
+    if (!Number.isFinite(parsed) || parsed <= 0) {
+      state.questionLimit = 'all';
+      return total;
+    }
+    const limit = Math.max(1, Math.min(total, parsed));
+    state.questionLimit = limit === total ? 'all' : limit;
     return limit;
   }
 
@@ -264,18 +272,16 @@
   function syncQuestionCountControl(test) {
     if (!questionCountInputEl) return;
     if (!test || !Array.isArray(test.questions) || !test.questions.length) {
-      questionCountInputEl.value = '';
-      questionCountInputEl.placeholder = '';
+      questionCountInputEl.value = 'all';
       questionCountInputEl.disabled = true;
       questionCountInputEl.title = '';
       return;
     }
     const total = test.questions.length;
     const limit = clampQuestionLimit(test);
-    questionCountInputEl.min = 1;
-    questionCountInputEl.max = total;
-    questionCountInputEl.value = limit;
-    questionCountInputEl.placeholder = total;
+    const effectiveValue = limit === total ? 'all' : String(limit);
+    const allowed = new Set(['all', '25', '50', '100']);
+    questionCountInputEl.value = allowed.has(effectiveValue) ? effectiveValue : 'all';
     questionCountInputEl.disabled = false;
     questionCountInputEl.title = `Dostępnych pytań: ${total}`;
   }
@@ -423,18 +429,18 @@
   }
 
   async function loadTestManifest() {
-    let manifest = { subjects: [], legacyFiles: [] };
+    // Prefer dynamic directory discovery so adding a file just works
+    let manifest = await discoverFromDirectory('tests');
 
-    try {
-      const res = await fetch('tests/index.json', { cache: 'no-cache' });
-      if (res.ok) {
-        const data = await res.json();
-        manifest = parseIndexManifest(data);
-      }
-    } catch (_) {}
-
+    // Fallback to index.json only if directory listing is blocked
     if (!manifest.subjects.length && !manifest.legacyFiles.length) {
-      manifest = await discoverFromDirectory('tests');
+      try {
+        const res = await fetch('tests/index.json', { cache: 'no-cache' });
+        if (res.ok) {
+          const data = await res.json();
+          manifest = parseIndexManifest(data);
+        }
+      } catch (_) {}
     }
 
     if (!manifest.legacyFiles.length) {
@@ -673,9 +679,10 @@
     questionCountInputEl.addEventListener('change', () => {
       const test = getCurrentTest();
       if (!test) return;
-      const raw = Number.parseInt(questionCountInputEl.value, 10);
+      const raw = questionCountInputEl.value === 'all' ? 'all' : Number.parseInt(questionCountInputEl.value, 10);
+      state.questionLimit = raw === 'all' ? 'all' : raw;
       const limit = clampQuestionLimit(test, raw);
-      questionCountInputEl.value = limit;
+      questionCountInputEl.value = limit === test.questions.length ? 'all' : String(limit);
       resetTest();
     });
   }
