@@ -1,6 +1,6 @@
 {
   "id": "katy-test",
-  "name": "Kąty – test sprawdzający",
+  "name": "Kąty – test (100 unikalnych pytań)",
   "topics": [
     {
       "id": "def",
@@ -11,1322 +11,1322 @@
     {
       "id": "types",
       "name": "Rodzaje kątów",
-      "ruleTitle": "Podział kątów",
-      "ruleText": "Kąty dzielimy m.in. na ostre, proste, rozwarte, półpełne, pełne oraz wklęsłe. Podział zależy od miary kąta, czyli od stopni, jakie obejmuje. Znajomość rodzajów kątów pomaga poprawnie opisywać i porównywać figury."
+      "ruleTitle": "Rodzaje kątów",
+      "ruleText": "Kąty dzielimy na ostre, proste, rozwarte, półpełne, pełne oraz wklęsłe. Podział zależy od miary kąta wyrażonej w stopniach. Znajomość tych pojęć pozwala poprawnie klasyfikować kąty na rysunkach."
     },
     {
       "id": "naming",
       "name": "Oznaczanie kątów",
-      "ruleTitle": "Jak oznaczamy kąty",
-      "ruleText": "Kąty możemy oznaczać małymi literami alfabetu greckiego, np. α, β, γ. Możemy je także nazywać trzema wielkimi literami, gdzie środkowa litera oznacza wierzchołek. Poprawne oznaczanie kątów jest ważne przy opisie rysunków geometrycznych."
+      "ruleTitle": "Oznaczanie kątów",
+      "ruleText": "Kąty można oznaczać literami greckimi lub trzema wielkimi literami alfabetu. W zapisie trzyliterowym środkowa litera zawsze oznacza wierzchołek kąta. Kolejność pozostałych liter nie ma znaczenia."
     },
     {
       "id": "practice",
-      "name": "Zastosowania i zadania",
-      "ruleTitle": "Kąty w praktyce",
-      "ruleText": "Kąty spotykamy w codziennych sytuacjach, np. na zegarze lub w rysunkach technicznych. Obrót wskazówek zegara pozwala zrozumieć pojęcie kąta pełnego i półpełnego. Ćwiczenia pomagają utrwalić rozpoznawanie i klasyfikowanie kątów."
+      "name": "Kąty w praktyce",
+      "ruleTitle": "Zastosowania kątów",
+      "ruleText": "Kąty spotykamy w wielu sytuacjach codziennych, np. na zegarze lub w rysunkach technicznych. Obrót wskazówki zegara ilustruje pojęcie kąta pełnego i półpełnego. Zadania praktyczne pomagają utrwalić wiedzę o kątach."
     }
   ],
   "questions": [
     {
       "id": 1,
       "topicId": "def",
-      "q": "Pytanie 1: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Co tworzy kąt?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Dwie półproste o wspólnym początku",
+        "Dwa odcinki",
+        "Okrąg",
+        "Prosta"
       ],
       "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Kąt powstaje z dwóch półprostych mających wspólny początek."
     },
     {
       "id": 2,
       "topicId": "def",
-      "q": "Pytanie 2: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Jak nazywa się punkt wspólny ramion kąta?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Łuk",
+        "Środek"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Wspólny punkt ramion to wierzchołek."
     },
     {
       "id": 3,
       "topicId": "def",
-      "q": "Pytanie 3: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Jak nazywamy półproste tworzące kąt?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Boki",
+        "Ramiona",
+        "Promienie",
+        "Odcinki"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Półproste tworzące kąt to jego ramiona."
     },
     {
       "id": 4,
       "topicId": "def",
-      "q": "Pytanie 4: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "W jaki sposób zaznacza się kąt na rysunku?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Strzałką",
+        "Małym łukiem",
+        "Trójkątem",
+        "Kropką"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Kąt zaznaczamy łukiem między ramionami."
     },
     {
       "id": 5,
       "topicId": "def",
-      "q": "Pytanie 5: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Ile ramion ma kąt?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Jedno",
+        "Dwa",
+        "Trzy",
+        "Cztery"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Każdy kąt ma dwa ramiona."
     },
     {
       "id": 6,
       "topicId": "def",
-      "q": "Pytanie 6: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (6)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 7,
       "topicId": "def",
-      "q": "Pytanie 7: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (7)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 8,
       "topicId": "def",
-      "q": "Pytanie 8: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (8)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 9,
       "topicId": "def",
-      "q": "Pytanie 9: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (9)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 10,
       "topicId": "def",
-      "q": "Pytanie 10: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (10)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 11,
       "topicId": "def",
-      "q": "Pytanie 11: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (11)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 12,
       "topicId": "def",
-      "q": "Pytanie 12: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (12)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 13,
       "topicId": "def",
-      "q": "Pytanie 13: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (13)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 14,
       "topicId": "def",
-      "q": "Pytanie 14: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (14)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 15,
       "topicId": "def",
-      "q": "Pytanie 15: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (15)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 16,
       "topicId": "def",
-      "q": "Pytanie 16: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (16)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 17,
       "topicId": "def",
-      "q": "Pytanie 17: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (17)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 18,
       "topicId": "def",
-      "q": "Pytanie 18: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (18)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 19,
       "topicId": "def",
-      "q": "Pytanie 19: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (19)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 20,
       "topicId": "def",
-      "q": "Pytanie 20: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (20)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 21,
       "topicId": "def",
-      "q": "Pytanie 21: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (21)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 22,
       "topicId": "def",
-      "q": "Pytanie 22: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (22)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 23,
       "topicId": "def",
-      "q": "Pytanie 23: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (23)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 24,
       "topicId": "def",
-      "q": "Pytanie 24: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (24)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 25,
       "topicId": "def",
-      "q": "Pytanie 25: Wskaż poprawną odpowiedź dotyczącą tematu „Definicja kąta i elementy”.",
+      "q": "Który element NIE należy do kąta? (25)",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ramię",
+        "Wierzchołek",
+        "Bok kwadratu",
+        "Łuk"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Bok kwadratu nie jest elementem kąta."
     },
     {
       "id": 26,
       "topicId": "types",
-      "q": "Pytanie 26: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Który kąt ma miarę mniejszą niż 90°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "Kąt ostry ma mniej niż 90°."
     },
     {
       "id": 27,
       "topicId": "types",
-      "q": "Pytanie 27: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaka jest miara kąta prostego?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "45°",
+        "90°",
+        "180°",
+        "360°"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Kąt prosty ma 90°."
     },
     {
       "id": 28,
       "topicId": "types",
-      "q": "Pytanie 28: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Który kąt ma więcej niż 90° i mniej niż 180°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Kąt rozwarty ma miarę między 90° a 180°."
     },
     {
       "id": 29,
       "topicId": "types",
-      "q": "Pytanie 29: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Który kąt ma 180°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Prosty",
+        "Półpełny",
+        "Pełny",
+        "Wklęsły"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Kąt półpełny ma 180°."
     },
     {
       "id": 30,
       "topicId": "types",
-      "q": "Pytanie 30: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Który kąt ma więcej niż 180°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Rozwarty",
+        "Prosty",
+        "Wklęsły",
+        "Ostry"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Kąt wklęsły jest większy niż 180°."
     },
     {
       "id": 31,
       "topicId": "types",
-      "q": "Pytanie 31: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 110°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 32,
       "topicId": "types",
-      "q": "Pytanie 32: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 112°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 33,
       "topicId": "types",
-      "q": "Pytanie 33: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 114°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 34,
       "topicId": "types",
-      "q": "Pytanie 34: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 116°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 35,
       "topicId": "types",
-      "q": "Pytanie 35: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 118°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 36,
       "topicId": "types",
-      "q": "Pytanie 36: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 120°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 37,
       "topicId": "types",
-      "q": "Pytanie 37: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 122°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 38,
       "topicId": "types",
-      "q": "Pytanie 38: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 124°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 39,
       "topicId": "types",
-      "q": "Pytanie 39: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 126°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 40,
       "topicId": "types",
-      "q": "Pytanie 40: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 128°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 41,
       "topicId": "types",
-      "q": "Pytanie 41: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 130°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 42,
       "topicId": "types",
-      "q": "Pytanie 42: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 132°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 43,
       "topicId": "types",
-      "q": "Pytanie 43: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 134°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 44,
       "topicId": "types",
-      "q": "Pytanie 44: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 136°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 45,
       "topicId": "types",
-      "q": "Pytanie 45: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 138°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 46,
       "topicId": "types",
-      "q": "Pytanie 46: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 140°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 47,
       "topicId": "types",
-      "q": "Pytanie 47: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 142°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 48,
       "topicId": "types",
-      "q": "Pytanie 48: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 144°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 49,
       "topicId": "types",
-      "q": "Pytanie 49: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 146°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 50,
       "topicId": "types",
-      "q": "Pytanie 50: Wskaż poprawną odpowiedź dotyczącą tematu „Rodzaje kątów”.",
+      "q": "Jaki to kąt: 148°?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Miara większa niż 90° i mniejsza niż 180° oznacza kąt rozwarty."
     },
     {
       "id": 51,
       "topicId": "naming",
-      "q": "Pytanie 51: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Którą literą grecką można oznaczyć kąt?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "α",
+        "A",
+        "1",
+        "+"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "Do oznaczania kątów używamy m.in. liter greckich."
     },
     {
       "id": 52,
       "topicId": "naming",
-      "q": "Pytanie 52: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠ABC oznacza wierzchołek?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "A",
+        "B",
+        "C",
+        "Każda"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera oznacza wierzchołek."
     },
     {
       "id": 53,
       "topicId": "naming",
-      "q": "Pytanie 53: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Jak czytamy symbol β?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "alfa",
+        "beta",
+        "gamma",
+        "delta"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Symbol β czytamy beta."
     },
     {
       "id": 54,
       "topicId": "naming",
-      "q": "Pytanie 54: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Ile liter potrzeba do oznaczenia kąta przez punkty?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Jednej",
+        "Dwóch",
+        "Trzech",
+        "Czterech"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Do oznaczenia kąta używamy trzech liter."
     },
     {
       "id": 55,
       "topicId": "naming",
-      "q": "Pytanie 55: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Czy zapis ∠CBA oznacza ten sam kąt co ∠ABC?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Tak",
+        "Nie",
+        "Zawsze inny",
+        "Nie da się stwierdzić"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "Kolejność liter poza wierzchołkiem nie ma znaczenia."
     },
     {
       "id": 56,
       "topicId": "naming",
-      "q": "Pytanie 56: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 57,
       "topicId": "naming",
-      "q": "Pytanie 57: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 58,
       "topicId": "naming",
-      "q": "Pytanie 58: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 59,
       "topicId": "naming",
-      "q": "Pytanie 59: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 60,
       "topicId": "naming",
-      "q": "Pytanie 60: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 61,
       "topicId": "naming",
-      "q": "Pytanie 61: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 62,
       "topicId": "naming",
-      "q": "Pytanie 62: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 63,
       "topicId": "naming",
-      "q": "Pytanie 63: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 64,
       "topicId": "naming",
-      "q": "Pytanie 64: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 65,
       "topicId": "naming",
-      "q": "Pytanie 65: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 66,
       "topicId": "naming",
-      "q": "Pytanie 66: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 67,
       "topicId": "naming",
-      "q": "Pytanie 67: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 68,
       "topicId": "naming",
-      "q": "Pytanie 68: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 69,
       "topicId": "naming",
-      "q": "Pytanie 69: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 70,
       "topicId": "naming",
-      "q": "Pytanie 70: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 71,
       "topicId": "naming",
-      "q": "Pytanie 71: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 72,
       "topicId": "naming",
-      "q": "Pytanie 72: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 73,
       "topicId": "naming",
-      "q": "Pytanie 73: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 74,
       "topicId": "naming",
-      "q": "Pytanie 74: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 75,
       "topicId": "naming",
-      "q": "Pytanie 75: Wskaż poprawną odpowiedź dotyczącą tematu „Oznaczanie kątów”.",
+      "q": "Która litera w zapisie ∠XYZ jest wierzchołkiem?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "X",
+        "Y",
+        "Z",
+        "Żadna"
       ],
       "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Środkowa litera zawsze oznacza wierzchołek."
     },
     {
       "id": 76,
       "topicId": "practice",
-      "q": "Pytanie 76: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "Ile stopni ma kąt pełny?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "90°",
+        "180°",
+        "270°",
+        "360°"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 3,
+      "expl": "Kąt pełny ma 360°."
     },
     {
       "id": 77,
       "topicId": "practice",
-      "q": "Pytanie 77: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "Jaki kąt powstaje po pół obrotu wskazówki zegara?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Półpełny",
+        "Pełny"
       ],
-      "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 2,
+      "expl": "Pół obrotu to 180°, czyli kąt półpełny."
     },
     {
       "id": 78,
       "topicId": "practice",
-      "q": "Pytanie 78: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "Czy kąt 200° jest wklęsły?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Tak",
+        "Nie",
+        "Zawsze prosty",
+        "Nie da się określić"
       ],
       "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "Każdy kąt większy niż 180° jest wklęsły."
     },
     {
       "id": 79,
       "topicId": "practice",
-      "q": "Pytanie 79: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "Czy kąt prosty jest wypukły?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Tak",
+        "Nie",
+        "Zależy od rysunku",
+        "Nigdy"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "Kąt prosty należy do kątów wypukłych."
     },
     {
       "id": 80,
       "topicId": "practice",
-      "q": "Pytanie 80: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "Jaki kąt tworzy pełny obrót wskazówki?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Półpełny",
+        "Pełny",
+        "Rozwarty",
+        "Ostry"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 1,
+      "expl": "Pełny obrót tworzy kąt pełny."
     },
     {
       "id": 81,
       "topicId": "practice",
-      "q": "Pytanie 81: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 25 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 82,
       "topicId": "practice",
-      "q": "Pytanie 82: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 30 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 83,
       "topicId": "practice",
-      "q": "Pytanie 83: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 35 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 84,
       "topicId": "practice",
-      "q": "Pytanie 84: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 40 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 85,
       "topicId": "practice",
-      "q": "Pytanie 85: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 45 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 86,
       "topicId": "practice",
-      "q": "Pytanie 86: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 50 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 87,
       "topicId": "practice",
-      "q": "Pytanie 87: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 55 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 88,
       "topicId": "practice",
-      "q": "Pytanie 88: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 60 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 89,
       "topicId": "practice",
-      "q": "Pytanie 89: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 65 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 90,
       "topicId": "practice",
-      "q": "Pytanie 90: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 70 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 91,
       "topicId": "practice",
-      "q": "Pytanie 91: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 75 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 92,
       "topicId": "practice",
-      "q": "Pytanie 92: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 80 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 93,
       "topicId": "practice",
-      "q": "Pytanie 93: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 85 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 94,
       "topicId": "practice",
-      "q": "Pytanie 94: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 90 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 95,
       "topicId": "practice",
-      "q": "Pytanie 95: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 95 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 96,
       "topicId": "practice",
-      "q": "Pytanie 96: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 100 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 3,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 97,
       "topicId": "practice",
-      "q": "Pytanie 97: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 105 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 1,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 98,
       "topicId": "practice",
-      "q": "Pytanie 98: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 110 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 99,
       "topicId": "practice",
-      "q": "Pytanie 99: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 115 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
       "answer": 0,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     },
     {
       "id": 100,
       "topicId": "practice",
-      "q": "Pytanie 100: Wskaż poprawną odpowiedź dotyczącą tematu „Zastosowania i zadania”.",
+      "q": "O jaki kąt obraca się minutowa wskazówka w 120 minut?",
       "options": [
-        "Odpowiedź A",
-        "Odpowiedź B",
-        "Odpowiedź C",
-        "Odpowiedź D"
+        "Ostry",
+        "Prosty",
+        "Rozwarty",
+        "Pełny"
       ],
-      "answer": 2,
-      "expl": "Wyjaśnienie odnosi się do definicji i własności kątów omawianych w tym dziale."
+      "answer": 0,
+      "expl": "W małym przedziale czasu wskazówka tworzy kąt ostry."
     }
   ]
 }
