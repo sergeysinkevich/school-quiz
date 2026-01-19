@@ -23,7 +23,9 @@
       "path": "tests/math",
       "tests": [
         "fractions-basics.json",
-        "geometry-basics.json"
+        "geometry-basics.json",
+"katy-test.json",
+"proste_prostopadle_i_rownolegle.json"
       ]
     },
     {
